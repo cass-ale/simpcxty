@@ -10,7 +10,37 @@
     font-weight: normal;
     font-style: normal;
 }
+:root {
+    font-size: 100%;
+}
 
-h1 {
+
+
+/*Header/Navbar css section*/
+.headerBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "specialElite";
+}
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+.h1 {
     font-family: "Kristi";
+    font-size: 6rem;
+}
+.icons {
+    display: flex;
+    gap: 1.5rem;
+}
+.icons a {
+    color: black;
 }
