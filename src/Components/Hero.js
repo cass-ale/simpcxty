@@ -6,7 +6,7 @@ function Hero() {
     return (
         <div className="hero">
 
-        <a href='#'>
+        <a href='#' target="_blank" rel="noopener noreferrer">
         <section className="heroImage">
             <img src={newRelease} alt="Newest Release From simpcxty Available Now!" />
         </section>
@@ -18,7 +18,7 @@ function Hero() {
             Feat. King Jaah
         </p>
 
-        <a href='#'><button className="button">
+        <a href='#' target="_blank" rel="noopener noreferrer"><button className="button">
             <p>LISTEN NOW</p>
         </button></a>
         </section>
