@@ -18,7 +18,7 @@
     height: 100vh;
 }
 .backgroundImage {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,7 +32,7 @@
 }
 .backgroundTint {
     background-color: rgba(68, 112, 147, 0.4);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     height: 100%;
