@@ -71,9 +71,9 @@ function Header() {
 {/*Navigation Links: first third of navbar. Unordered list to be styled in CSS to be a horizontal list with proper styling.*/}
             <ul className="nav">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#music">Music</a></li>
+                <li><a href="#music">Sounds</a></li>
                 <li><a href="#visuals">Visuals</a></li>
-                <li><a href="#store">Store</a></li>
+                <li><a href="#store">Customs</a></li>
             </ul>
 
 
