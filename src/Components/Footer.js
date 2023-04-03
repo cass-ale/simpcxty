@@ -37,7 +37,7 @@ const handleClick = () => {
         </div>
 
         <hr />
-        <section id='copyright'>© CAPRI Media {new Date().getFullYear().toString()} © simpcxty {new Date().getFullYear().toString()}. All Rights Reserved. Use of this site constitutes acceptance of our <a href="https://www.caprimag.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a> and <a href="https://www.caprimag.com/cookies" target="_blank" rel="noopener noreferrer">Cookie</a> policies. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of CAPRI Media.</section>
+        <section id='copyright'>© {new Date().getFullYear().toString()} CAPRI Media and simpcxty. All Rights Reserved. Use of this site constitutes acceptance of our <a href="https://www.caprimag.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a> and <a href="https://www.caprimag.com/cookies" target="_blank" rel="noopener noreferrer">Cookie</a> policies. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of CAPRI Media.</section>
         </div>
     )
 }
