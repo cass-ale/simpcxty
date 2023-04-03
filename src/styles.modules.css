@@ -78,6 +78,7 @@
 .h1 {
     font-family: "Kristi";
     font-size: 6.5rem;
+    padding-left: 9.75rem;
 }
 .h1 a {
     text-decoration: none;
@@ -92,7 +93,28 @@
     color: black;
 }
 
-
+#internalNav li {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    position: relative;
+}
+#internalNav li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+    height: 0.1rem;
+    background-color: black;
+    transition: transform .5s ease;
+    transform: scaleX(0);
+    transform-origin: bottom
+}
+#internalNav li:hover::after {
+    transform: scaleX(1);
+}
 /* Hero Section CSS */
 .hero {
     display: flex;

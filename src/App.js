@@ -3,6 +3,7 @@ import './index.css'
 import React from 'react';
 import Home from './Components/Home';
 import Contact from './Components/Contact'
+import Store from './Components/Store';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/contact' element={<Contact />} />
+        <Route exact path='/PG' element={<Store />} />
       </Routes>
     </Router>
     </div>

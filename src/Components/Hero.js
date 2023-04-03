@@ -4,7 +4,7 @@ import newRelease from "../Images/newestRelease.png";
 
 function Hero() {
     return (
-        <div className="hero">
+        <div className="hero" id='hero'>
 
         <a href='#' target="_blank" rel="noopener noreferrer">
         <section className="heroImage">

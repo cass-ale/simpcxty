@@ -47,33 +47,16 @@ const socials = [
 // Icons and social media URLs stored inside of an array (named socials) of objects that contain the icon for the social media website and its corresponding URL for cleaner + easier reference in the Header() function code block.
 
 
-//Draft of the handleClick function that will scroll page sections into view. Will assign IDs to each section and the click function accepts the ID and scrolls that element into view. Will test when there is content to scroll to.
-const handleClick = (anchor) => {
-    let id = `${anchor}-section`;
-    const elements = document.querySelectorAll(`#${id}`);
-    const element = elements[0];
-    if (element) {
-        element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-    }
-}
-
 
 function Header() {
     return (
-//GOAL: Navigation links will activate a scroll function to bring the corresponding element/component into the viewport instead of loading new pages.
-//NavBar will have navigation links to the left, main site/artist title center, social media icon+link to the right. Containing each piece in class container named headerBar.
-//NavBar should follow user as they scroll down the page.
+
         <nav className="headerBar">
 
 
 {/*Navigation Links: first third of navbar. Unordered list to be styled in CSS to be a horizontal list with proper styling.*/}
             <ul className="nav">
-                <li><a href="#music">Sounds</a></li>
-                <li><a href="#visuals">Visuals</a></li>
-                <li><a href="#store">P. G.</a></li>
+                <li><Link to="/PG">P. G.</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
 
