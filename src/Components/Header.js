@@ -8,7 +8,8 @@ import {
     faFacebook,
     faSpotify,
     faApple
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
+import { Link } from "react-router-dom";
 //Install FontAwesome packs for both brand icons and standard icons using npm command in terminal
 //npm install --save @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
 
@@ -70,15 +71,15 @@ function Header() {
 
 {/*Navigation Links: first third of navbar. Unordered list to be styled in CSS to be a horizontal list with proper styling.*/}
             <ul className="nav">
-                <li><a href="#hero">Home</a></li>
                 <li><a href="#music">Sounds</a></li>
                 <li><a href="#visuals">Visuals</a></li>
-                <li><a href="#store">Customs</a></li>
+                <li><a href="#store">P. G.</a></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
 
 
 {/* Main artist/site title */}
-            <p className="h1"><a href="#hero">simpcxty</a></p>
+            <p className="h1"><Link to="/">simpcxty</Link></p>
 
 
 {/* Socials + Icons */}

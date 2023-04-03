@@ -156,6 +156,86 @@
     color: #D7D4DB;
 }
 
+/* Contact Page CSS Styling */
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-bottom: 2.75rem;
+    margin-left: 10.85rem;
+    margin-right: 20rem;
+    font-family: 'SpecialElite';
+}
+#conHeader {
+    font-size: 6rem;
+    font-family: 'Kristi';
+}
+.contactContainer p {
+    font-size: 1.5rem;
+    width: 75rem;
+    line-height: 2rem;
+}
+.contactContainer button {
+    width: 15rem;
+    padding-left: 4.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.contactForm {
+    height: 100%;
+    width: 100%;
+}
+.contactForm form{
+    z-index: 100;
+    border: ghostwhite solid;
+    background-color: whitesmoke;;
+    position: relative;
+    height: 50rem;
+    bottom: 42rem;
+    opacity: 0.99;
+    transition: all 0.4s;
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.formContents {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SpecialElite';
+}
+#contactForm input {
+    width: 25rem;
+    height: 2rem;
+}
+#messageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SpecialElite';
+    text-align: start;
+}
+.formClose {
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
 
 footer {
     font-family: 'SpecialELite';
@@ -166,7 +246,7 @@ footer a {
 .footerContainer {
     background-color: #D7D4DB !important;
     color: black;
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 .footerTop {
     display: flex;

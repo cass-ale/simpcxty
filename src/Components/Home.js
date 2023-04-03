@@ -4,18 +4,26 @@ import Music from "./Music";
 import Videos from './Videos';
 import Photos from './Photos';
 import Store from './Store';
+import Header from './Header';
+import Footer from './Footer';
 
 
-function Main() {
+function Home() {
     return (
         <>
+        <header>
+            <Header />
+        </header>
             <Hero />
             <Music />
             <Videos />
             <Photos />
             <Store />
+        <footer>
+            <Footer />
+        </footer>
         </>
     )
 }
 
-export default Main;
+export default Home;

@@ -1,9 +1,11 @@
 import './styles.modules.css'
 import './index.css'
 import React from 'react';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import Footer from './Components/Footer';
+import Home from './Components/Home';
+import Contact from './Components/Contact'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
+
 
 function App() {
   return (
@@ -12,16 +14,13 @@ function App() {
         <div className='backgroundTint' />
     <div
       className='backgroundImage'
-       />
-    <header>
-    <Header />
-    </header>
-    <main>
-    <Main />
-    </main>
-    <footer>
-    <Footer />
-    </footer>
+    />
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/contact' element={<Contact />} />
+      </Routes>
+    </Router>
     </div>
   );
 }
