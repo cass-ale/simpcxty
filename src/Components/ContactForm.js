@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 function ContactForm(props) {
-const handleSubmit = () => {
-    alert("Thank you for contacting us. We will get back to you as soon as possible.");
-}
+// const handleSubmit = () => {
+//     alert("Thank you for contacting us. We will get back to you as soon as possible.");
+// }
     return(
         <>
         <Formik
