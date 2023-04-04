@@ -1,10 +1,30 @@
-import React from 'react';
+import React, {useState, useRef } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 function ContactForm(props) {
+
+    const formRef = useRef(null)
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbzPpC4Y1C5F91PDt9mlR4HYIV-IasjLZVMeUKqqlo-twsR0yRD9g65nV4go2SlzjXKqNA/exec"
+    const [loading, setLoading] = useState(false)
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        setLoading(true)
+
+        fetch(scriptUrl, {
+        method: 'POST',
+        body: new FormData(formRef.current),
+
+    }).then(res => {
+            console.log("SUCCESSFULLY SUBMITTED")
+            setLoading(false)
+        })
+        .catch(err => console.log(err))
+    }
+
     return(
         <>
         <Formik
@@ -21,14 +41,9 @@ function ContactForm(props) {
                 message: Yup.string().required(""),
               })
         }
-        onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 400);
-          }}
+        onSubmit={handleSubmit}
+        ref={formRef}
         >
-            {({ isSubmitting }) => (
         <Form>
             <div className="contactForm">
 
@@ -65,7 +80,7 @@ function ContactForm(props) {
             </section>
 
             <section id="contactForm">
-            <button className='button' type="submit" disabled={isSubmitting}>
+            <button className='button' type="submit" value={loading ? "Loading..." : "SEND MESSAGE"}>
             Send
             </button>
             </section>
@@ -76,7 +91,7 @@ function ContactForm(props) {
 
             </div>
         </Form>
-        )}
+        
         </Formik>
         </>
     )

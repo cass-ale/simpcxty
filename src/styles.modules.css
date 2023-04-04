@@ -1,3 +1,4 @@
+/* Font Imports: Kristi and SpecialElite */
 @font-face {
     font-family: "Kristi";
     src: url(./Fonts/Kristi-Regular.ttf) format('truetype');
@@ -17,6 +18,7 @@
     position: relative;
     height: 100vh;
 }
+/* Background Image for the simpcxty version of the app is a photo that complements the cover of the latest release; same with the color pallete */
 .backgroundImage {
     position: fixed;
     top: 0;
@@ -39,7 +41,7 @@
     width: 100%;
     z-index: -1;
 }
-
+/* Added the image and a solid color to add a tint effect and mute the colors of the image */
 
 /*Header/Navbar css section*/
 .headerBar {
@@ -60,6 +62,7 @@
     border: 1px solid transparent;
     position: relative;
 }
+/* Underline animation for hovering over navigation items */
 .nav a::after {
     content: "";
     position: absolute;
@@ -78,8 +81,9 @@
 .h1 {
     font-family: "Kristi";
     font-size: 6.5rem;
-    padding-left: 9.75rem;
+    padding-left: 15.5rem;
 }
+/* Set left padding to ~9.5rem wehn P>G> link is rendered */
 .h1 a {
     text-decoration: none;
     color: black;
@@ -214,7 +218,7 @@
 .contactForm form{
     z-index: 100;
     border: #1C5D3B solid;
-    background-color: whitesmoke;;
+    background-color: #D7D4DB;
     position: relative;
     height: 50rem;
     bottom: 42rem;
@@ -285,6 +289,7 @@ footer a {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .footerLinks a {
     display: flex;
@@ -300,7 +305,7 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     gap: .11rem;
     font-size: 1.2rem;
 }

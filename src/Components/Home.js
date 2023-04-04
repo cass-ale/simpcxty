@@ -3,7 +3,6 @@ import Hero from "./Hero";
 import Music from "./Music";
 import Videos from './Videos';
 import Photos from './Photos';
-import Store from './Store';
 import Header from './Header';
 import Footer from './Footer';
 

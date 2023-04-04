@@ -1,5 +1,8 @@
 import React from "react";
 import SubForm from "./SubForm";
+import { Link } from "react-router-dom";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 const handleClick = () => {
     window.scrollTo({
@@ -17,14 +20,15 @@ const handleClick = () => {
         <div className="footerTop">
 
         {/* Logo that doubles as a back to top scroll button */}
-        <section id="simpcxty" onClick={handleClick}>simpcxty</section>
+        <section id="simpcxty" onClick={handleClick} data-tooltip-id='scrollUp' data-tooltip-content="Scroll To Top">simpcxty</section>
+        <ReactTooltip id="scrollUp" />
 
 
         <div className="footerLinks">
             NAVIGATION
-            <a href='#music'>Sounds</a>
-            <a href='#visuals'>Visuals</a>
-            <a href='#store'>Customs</a>
+            <Link to='/'>Home</Link>
+            <Link to='/PG'>P. G.</Link>
+            <Link to='/contact'>Contact</Link>
         </div>
 
 

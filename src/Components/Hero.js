@@ -6,7 +6,7 @@ function Hero() {
     return (
         <div className="hero" id='hero'>
 
-        <a href='#' target="_blank" rel="noopener noreferrer">
+        <a href='https://unitedmasters.com/m/642b4f481e4cf0054bfba477' target="_blank" rel="noopener noreferrer">
         <section className="heroImage">
             <img src={newRelease} alt="Newest Release From simpcxty Available Now!" />
         </section>
@@ -18,7 +18,7 @@ function Hero() {
             Feat. King Jaah
         </p>
 
-        <a href='#' target="_blank" rel="noopener noreferrer"><button className="button">
+        <a href='https://unitedmasters.com/m/642b4f481e4cf0054bfba477' target="_blank" rel="noopener noreferrer"><button className="button">
             <p>LISTEN NOW</p>
         </button></a>
         </section>
