@@ -1,30 +1,13 @@
-import React, {useState, useRef } from 'react';
+import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 function ContactForm(props) {
-
-    const formRef = useRef(null)
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbzPpC4Y1C5F91PDt9mlR4HYIV-IasjLZVMeUKqqlo-twsR0yRD9g65nV4go2SlzjXKqNA/exec"
-    const [loading, setLoading] = useState(false)
-
-    const handleSubmit = (e) =>{
-        e.preventDefault()
-        setLoading(true)
-
-        fetch(scriptUrl, {
-        method: 'POST',
-        body: new FormData(formRef.current),
-
-    }).then(res => {
-            console.log("SUCCESSFULLY SUBMITTED")
-            setLoading(false)
-        })
-        .catch(err => console.log(err))
-    }
-
+const handleSubmit = () => {
+    alert("Thank you for contacting us. We will get back to you as soon as possible.");
+}
     return(
         <>
         <Formik
@@ -35,19 +18,20 @@ function ContactForm(props) {
             message: "" }}
         validationSchema={
             Yup.object({
-                firstName: Yup.string().required(""),
-                lastName: Yup.string().required(""),
-                email: Yup.string().email("Invalid Email Address").required(""),
-                message: Yup.string().required(""),
+                firstName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
+                lastName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
+                email: Yup.string().min(1, "Please Fill Out This Field").max(100).email("Invalid Email Address").required(""),
+                message: Yup.string().min(10, "Messages Must Be At Least 10 Characters").max(750, "Please Shorten Your Message").required(""),
               })
         }
-        onSubmit={handleSubmit}
-        ref={formRef}
         >
+            {({ isSubmitting, errors, touched, isValid, dirty }) => (
         <Form>
             <div className="contactForm">
 
-            <form className='formContents'>
+            <form className='formContents'
+            method='POST'
+            action='https://script.google.com/macros/s/AKfycbzenjxt9Q2xBQw2HRaYYmmUx7sWXDpDLEWtXxurdnWGjeSSBP8LQIst0kJN0Ve8b1fl3A/exec'>
 
             <div className='formClose'><FontAwesomeIcon icon={faClose} onClick={props.closeForm} size='3x'/></div>
 
@@ -80,9 +64,10 @@ function ContactForm(props) {
             </section>
 
             <section id="contactForm">
-            <button className='button' type="submit" value={loading ? "Loading..." : "SEND MESSAGE"}>
+                {dirty && (
+            <button className='button' type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
             Send
-            </button>
+            </button>)}
             </section>
 
 
@@ -91,7 +76,7 @@ function ContactForm(props) {
 
             </div>
         </Form>
-        
+            )}
         </Formik>
         </>
     )
