@@ -10,28 +10,28 @@ function SubForm() {
         initialValues={{ email: "" }}
         validationSchema={Yup.object({
           email: Yup.string()
-            .email("Invalid Email Address")
+            .email("Invalid Email Address").min(1, "Please Fill Out This Field")
             .required(""),
         })}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
-        }}
       >
-        {({ isSubmitting }) => (
+        {({ errors, isValid, dirty }) => (
           <Form>
+            <form
+            method="POST"
+            action='https://script.google.com/macros/s/AKfycbyGFoqwkanomd1cTcYgtFlUkCY12E7_SdHuvwlW5465CJBAUIbP1pWDf6aDU-kopFMEIQ/exec'>
             <div className="footerForm">
             <label htmlFor="email">NEWSLETTER</label>
             <section id="footerForm">
             <Field type="email" name="email" style={{fontFamily: 'SpecialElite'}} placeholder='Enter Your Email . . .'/>
             <ErrorMessage name="email" />
-            <button className='footerButton' type="submit" disabled={isSubmitting}>
+            {dirty && (
+            <button className='footerButton' type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
               SUBSCRIBE
             </button>
+            )}
             </section>
             </div>
+            </form>
           </Form>
         )}
       </Formik>

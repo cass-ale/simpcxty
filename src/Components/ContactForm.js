@@ -25,7 +25,7 @@ const handleSubmit = () => {
               })
         }
         >
-            {({ isSubmitting, errors, touched, isValid, dirty }) => (
+            {({ errors, isValid, dirty }) => (
         <Form>
             <div className="contactForm">
 
