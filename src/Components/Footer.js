@@ -27,7 +27,7 @@ const handleClick = () => {
         <div className="footerLinks">
             NAVIGATION
             <Link to='/'>Home</Link>
-            <Link to='/PG'>P. G.</Link>
+            {/* <Link to='/PG'>P. G.</Link> */}
             <Link to='/contact'>Contact</Link>
         </div>
 
