@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Header from './Header';
+import NotHomeHeader from './NotHomeHeader';
 import Footer from './Footer';
 import Form from './ContactForm'
 
@@ -14,7 +14,7 @@ function Contact() {
     return (
         <>
             <header>
-                <Header />
+                <NotHomeHeader />
             </header>
 
             <main>
