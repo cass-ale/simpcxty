@@ -5,9 +5,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 function ContactForm(props) {
-// const handleSubmit = () => {
-//     alert("Thank you for contacting us. We will get back to you as soon as possible.");
-// }
+    const formRef = React.useRef(null);
+  
+    React.useEffect(() => {
+      const form = formRef.current;
+      form.addEventListener("submit", handleSubmit);
+  
+      return () => {
+        form.removeEventListener("submit", handleSubmit);
+      };
+    },);
+  
+    function handleSubmit(e) {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const action = e.target.action;
+      fetch(action, {
+        method: "POST",
+        body: data,
+      }).then(() => {
+        alert("Success! We Have Received Your Message And Will Get Back To You Shortly.");
+      });
+      props.closeForm();
+    }
     return(
         <>
         <Formik
@@ -29,9 +49,9 @@ function ContactForm(props) {
         <Form>
             <div className="contactForm">
 
-            <form className='formContents'
-            method='POST'
-            action='https://script.google.com/macros/s/AKfycbzenjxt9Q2xBQw2HRaYYmmUx7sWXDpDLEWtXxurdnWGjeSSBP8LQIst0kJN0Ve8b1fl3A/exec'>
+            <form ref={formRef} className='formContents'
+            action="https://script.google.com/macros/s/AKfycbzenjxt9Q2xBQw2HRaYYmmUx7sWXDpDLEWtXxurdnWGjeSSBP8LQIst0kJN0Ve8b1fl3A/exec" method="post" id="my-form"
+            >
 
             <div className='formClose'><FontAwesomeIcon icon={faClose} onClick={props.closeForm} size='3x'/></div>
 
@@ -65,9 +85,7 @@ function ContactForm(props) {
 
             <section id="contactForm">
                 {dirty && (
-            <button className='button' type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
-            Send
-            </button>)}
+            <input className='formButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1.5rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
             </section>
 
 

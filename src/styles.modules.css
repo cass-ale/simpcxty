@@ -226,6 +226,25 @@
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
 }
+.formButton {
+    border: none;
+    background-color: #184461;
+    font-family: "SpecialElite";
+    font-size: 1.5rem;
+    color: #D7D4DB;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.formButton:hover {
+    background-color: #447093;
+}
+.formButton:active {
+    transform: scale(0.85);
+    background-color: #1C5D3B;
+    color: #D7D4DB;
+}
 .formContents {
     display: flex;
     flex-direction: column;
