@@ -15,6 +15,13 @@ import 'react-tooltip/dist/react-tooltip.css';
 //Install FontAwesome packs for both brand icons and standard icons using npm command in terminal
 //npm install --save @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
 
+const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
 
 const socials = [
     {
@@ -65,7 +72,7 @@ function Header() {
 
 {/* Main artist/site title */}
 
-            <p className="h1"><Link to="/" data-tooltip-id='header' data-tooltip-content="Return Home">simpcxty</Link></p>
+            <p className="h1"><Link to="/" data-tooltip-id='header' data-tooltip-content="Return Home" onClick={handleClick}>simpcxty</Link></p>
             <ReactTooltip id="header" />
 
 {/* Socials + Icons */}
