@@ -4,7 +4,6 @@ import React from 'react';
 import Home from './Components/Home';
 import Contact from './Components/Contact'
 import Store from './Components/Store';
-import Test from './Components/Test';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 
@@ -22,7 +21,6 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/PG' element={<Store />} />
-        <Route exact path='/test' element={<Test />} />
       </Routes>
     </Router>
     </div>

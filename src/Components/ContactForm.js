@@ -6,16 +6,16 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 function ContactForm(props) {
     const formRef = React.useRef(null);
-  
+
     React.useEffect(() => {
       const form = formRef.current;
       form.addEventListener("submit", handleSubmit);
-  
+
       return () => {
         form.removeEventListener("submit", handleSubmit);
       };
     },);
-  
+
     function handleSubmit(e) {
       e.preventDefault();
       const data = new FormData(e.target);
@@ -79,7 +79,7 @@ function ContactForm(props) {
 
             <section id="messageForm">
             <label htmlFor="message">Message*</label>
-            <Field as="textarea" name="message" style={{ width: '25rem', height: '10rem', flexGrow: '1', textAlign: 'left', fontFamily: 'SpecialElite' }} placeholder='What Would You Like To Let Us Know?' />
+            <Field as="textarea" name="message" style={{ width: '25rem', height: '10rem', resize:'none', flexGrow: '1', textAlign: 'left', fontFamily: 'SpecialElite' }} placeholder='What Would You Like To Let Us Know?' />
             <ErrorMessage name="message" />
             </section>
 

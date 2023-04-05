@@ -1,5 +1,6 @@
 import React from "react";
 import SubForm from "./SubForm";
+import Sub from "./Sub";
 import { Link } from "react-router-dom";
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -13,6 +14,11 @@ const handleClick = () => {
 
 
   function Footer() {
+    const [formSubmitted, setFormSubmitted] = React.useState(false);
+    const handleFormSubmit = () => {
+      setFormSubmitted(true);
+    };
+
     return (
         <div className="footerContainer">
 
@@ -33,7 +39,13 @@ const handleClick = () => {
 
 
         {/* Email Submission Form */}
-        <SubForm />
+        {/* <SubForm /> */}
+        {/* <Sub /> */}
+        {formSubmitted ? (
+          <Sub />
+        ) : (
+          <SubForm formSubmit={handleFormSubmit} />
+        )}
 
 
 

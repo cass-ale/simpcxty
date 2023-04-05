@@ -2,12 +2,10 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-function SubForm() {
+function SubForm(props) {
   const formRef = React.useRef(null);
-  
 
 
- 
   React.useEffect(() => {
     const form = formRef.current;
     form.addEventListener("submit", handleSubmit);
@@ -27,7 +25,7 @@ function SubForm() {
     }).then(() => {
       alert("Success! You Have Been Subscribed To The simpcxty Newsletter!");
     });
-
+    props.formSubmit();
   }
   return(
         <>
@@ -38,7 +36,7 @@ function SubForm() {
             .email("Invalid Email Address").min(1, "Please Fill Out This Field")
             .required(""),
         })}>
-        {({ errors, isValid, dirty, values }) => (
+        {({ errors, isValid, dirty, values, handleChange, formik }) => (
           <Form>
             <form
             ref={formRef}
@@ -48,7 +46,7 @@ function SubForm() {
             <div className="footerForm">
             <label htmlFor="email">NEWSLETTER</label>
             <section id="footerForm">
-            <Field type="email" name="email" value={values.email}  style={{fontFamily: 'SpecialElite'}} placeholder='Enter Your Email . . .'/>
+            <Field type="email" name="email" id='email' style={{fontFamily: 'SpecialElite'}} placeholder='Enter Your Email . . .'/>
             <ErrorMessage name="email" />
             {dirty && (
             <button className='footerButton' type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
