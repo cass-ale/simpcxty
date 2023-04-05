@@ -39,8 +39,6 @@ const handleClick = () => {
 
 
         {/* Email Submission Form */}
-        {/* <SubForm /> */}
-        {/* <Sub /> */}
         {formSubmitted ? (
           <Sub />
         ) : (

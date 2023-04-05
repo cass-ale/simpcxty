@@ -186,7 +186,7 @@
 .contactContainer {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     padding-left: 2.75rem;
     padding-right: 2.75rem;
     padding-bottom: 2.75rem;
@@ -202,6 +202,10 @@
     font-size: 1.5rem;
     width: 75rem;
     line-height: 2rem;
+    background-color: rgba(215, 212, 219, 0.75);
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    padding: 1rem;
 }
 .contactContainer button {
     width: 15rem;
@@ -221,7 +225,7 @@
     background-color: #D7D4DB;
     position: relative;
     height: 50rem;
-    bottom: 50rem;
+    bottom: 42.5rem;
     opacity: 0.97;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);

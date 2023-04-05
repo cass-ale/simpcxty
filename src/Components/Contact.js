@@ -26,10 +26,10 @@ function Contact() {
 
             <button className="button" onClick={openForm}>CONNECT</button>
             {showForm && <Form closeForm={closeForm} />}
-</div>                
+            </div>
 
             </main>
-        
+
             <footer>
                 <Footer />
             </footer>
