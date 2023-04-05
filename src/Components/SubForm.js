@@ -36,7 +36,7 @@ function SubForm(props) {
             .email("Invalid Email Address").min(1, "Please Fill Out This Field")
             .required(""),
         })}>
-        {({ errors, isValid, dirty, values, handleChange, formik }) => (
+        {({ errors, isValid, dirty }) => (
           <Form>
             <form
             ref={formRef}
