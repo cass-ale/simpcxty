@@ -28,13 +28,12 @@ function Home() {
             <Header />
         </header>
         <main>
-            <ul className="nav" id= 'internalNav'style={{display: 'flex',
+            <ul className="internalNav" id='internalNav'style={{display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
             fontFamily: 'SpecialElite',
             fontSize: '2.5rem',
-            marginTop: '0',
             cursor: 'pointer'}}>
                 <li onClick={() => {handleScrollToComponent('hero')}}>Latest</li>
                 <li onClick={() => {handleScrollToComponent('music')}}>Sounds</li>

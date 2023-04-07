@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import MobileMenu from "./MobileMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faInstagram,
@@ -9,6 +10,7 @@ import {
     faSpotify,
     faApple
 } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
@@ -58,10 +60,19 @@ const socials = [
 
 
 function Header() {
+    const [showMenu, setShowMenu] = useState(false);
+    const openMenu = () => {
+        setShowMenu(true);
+    }
+    const closeMenu = () => {
+        setShowMenu(false);
+    }
+
     return (
 
         <nav className="headerBar">
-
+            <section id="mobile"><FontAwesomeIcon icon={faBars} onClick={openMenu} size="3x" /></section>
+            {showMenu && <MobileMenu closeMenu={closeMenu} showMenu={showMenu} />}
 
 {/*Navigation Links: first third of navbar. Unordered list to be styled in CSS to be a horizontal list with proper styling.*/}
             <ul className="nav">
