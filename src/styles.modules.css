@@ -266,6 +266,9 @@
     flex-direction: column;
     height: 100%;
 }
+.mobileCon {
+    display: none;
+}
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -436,10 +439,42 @@ footer a {
         padding-top: 5rem;
         gap: 3rem;
     }
+    .heroImage img {
+        width: 100%;
+        height: auto;
+    }
+    .heroImage img:hover {
+        transform: scale(1);
+    }
     .cta {
         font-size: 3rem;
         text-align: center;
     }
+
+.mobileCon {
+    border: none;
+    background-color: #184461;
+    font-family: "SpecialElite";
+    font-size: 1.5rem;
+    color: #D7D4DB;
+    text-align: center;
+    padding: 0.5rem 5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.mobileCon a {
+    text-decoration: none;
+    color: #D7D4DB;
+}
+.mobileCon:hover {
+    background-color: #D7D4DB;
+    color: #184461;
+}
+.mobileCon:active {
+    transform: scale(0.85);
+    background-color: #1C5D3B;
+    color: #D7D4DB;
+}
     main {
         width: 100%;
         padding-top: 5rem;
@@ -494,6 +529,7 @@ footer a {
     }
     #conHeader {
         font-size: 4rem;
+        text-align: center;
     }
     #h1 {
         font-size: 2rem;
