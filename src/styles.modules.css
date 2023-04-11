@@ -49,6 +49,8 @@
     align-items: center;
     justify-content: space-evenly;
     font-family: "specialElite";
+    flex-wrap: wrap;
+    margin-bottom: -5rem;
 }
 .nav {
     list-style: none;
@@ -78,13 +80,13 @@
 .nav a:hover::after {
     transform: scaleX(1);
 }
-.h1 {
+#title {
     font-family: "Kristi";
     font-size: 6.5rem;
     padding-left: 15.5rem;
 }
 /* Set left padding to ~9.5rem wehn P>G> link is rendered */
-.h1 a {
+#title a {
     text-decoration: none;
     color: black;
     cursor: grabbing;
@@ -227,11 +229,41 @@
     margin-bottom: 4rem;
     text-align: center;
 }
+.conButton {
+    border: none;
+    background-color: #184461;
+    font-family: "SpecialElite";
+    font-size: 1.5rem;
+    color: #D7D4DB;
+    text-align: center;
+    padding: 0.5rem 5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.conButton a {
+    text-decoration: none;
+    color: #D7D4DB;
+}
+.conButton:hover {
+    background-color: #D7D4DB;
+    color: #184461;
+}
+.conButton:active {
+    transform: scale(0.85);
+    background-color: #1C5D3B;
+    color: #D7D4DB;
+}
+
+
+
 .contactForm {
-    height: 1rem;
+    height: 10rem;
     width: 100%;
 }
 .contactForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 100;
     border: #1C5D3B solid;
     background-color: #D7D4DB;
@@ -266,9 +298,6 @@
     flex-direction: column;
     height: 100%;
 }
-.mobileCon {
-    display: none;
-}
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -285,9 +314,9 @@
 #messageForm {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     flex-grow: 1;
     margin: 2rem;
+    width: 25rem;
     justify-content: center;
     align-items: center;
     font-family: 'SpecialElite';
@@ -297,8 +326,9 @@
     cursor: pointer;
     display: flex;
     justify-content: right;
+    align-items: flex-end;
     margin-top: 1rem;
-    margin-right: 2rem;
+    margin-left: 50rem;
 }
 
 footer {
@@ -384,6 +414,16 @@ footer a {
     font-size: 1.25rem;
 }
 
+/* Hides mobile/tablet menu button when on Large screens */
+@media screen and (min-width: 1020px) {
+    #mobile {
+        display: none;
+    }
+    .mobileCon {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     .headerBar {
         display: flex;
@@ -392,16 +432,16 @@ footer a {
         align-items: flex-start;
         position: fixed;
         z-index: 999;
-        gap: 9.5rem;
-        max-width: 100%;
         width: 100%;
         height: 5rem;
         background-color: #D7D4DB;
     }
-    .h1 {
-        margin: 0;
+
+    #title {
         font-size: 3.75rem;
         padding: 0;
+        position: relative;
+        bottom: 3.75rem
     }
     .icons {
         display: none;
@@ -412,15 +452,8 @@ footer a {
     .navButton {
         display: none;
     }
-    .internalNav{
-        display: 'flex';
-        flex-direction: 'row';
-        align-items: 'center';
-        justify-content: 'center';
-        font-family: 'SpecialElite';
-        font-size: '2.5rem';
-        margin-top: '0';
-        cursor: 'pointer';
+    .internalNav li{
+        display: none;
     }
     .footerTop {
         flex-direction: column;
@@ -434,13 +467,21 @@ footer a {
     }
     .hero {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         max-width: 100%;
         width: 100%;
         padding-top: 5rem;
-        gap: 3rem;
+        gap: 1rem;
+        padding-top: 0;
+    }
+    .heroImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .heroImage img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
     .heroImage img:hover {
@@ -450,31 +491,33 @@ footer a {
         font-size: 3rem;
         text-align: center;
     }
-
-.mobileCon {
-    border: none;
-    background-color: #184461;
-    font-family: "SpecialElite";
-    font-size: 1.5rem;
-    color: #D7D4DB;
-    text-align: center;
-    padding: 0.5rem 5rem;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-.mobileCon a {
-    text-decoration: none;
-    color: #D7D4DB;
-}
-.mobileCon:hover {
-    background-color: #D7D4DB;
-    color: #184461;
-}
-.mobileCon:active {
-    transform: scale(0.85);
-    background-color: #1C5D3B;
-    color: #D7D4DB;
-}
+    .conButton {
+        display: none;
+    }
+    .mobileCon {
+        border: none;
+        background-color: #184461;
+        font-family: "SpecialElite";
+        font-size: 1.5rem;
+        color: #D7D4DB;
+        text-align: center;
+        padding: 0.5rem 5rem;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .mobileCon a {
+        text-decoration: none;
+        color: #D7D4DB;
+    }
+    .mobileCon:hover {
+        background-color: #D7D4DB;
+        color: #184461;
+    }
+    .mobileCon:active {
+        transform: scale(0.85);
+        background-color: #1C5D3B;
+        color: #D7D4DB;
+    }
     main {
         width: 100%;
         padding-top: 5rem;
@@ -493,6 +536,7 @@ footer a {
     .contactContainer p {
         font-size: 1rem;
         width: 100%;
+        max-width: -moz-fit-content;
         max-width: fit-content;
         text-align: center;
     }
@@ -519,9 +563,8 @@ footer a {
         width: 100%;
     }
     #messageForm {
-        width: 10rem;
+        width: 12rem;
         height: 5rem;
-        margin-left: 1rem;
         align-items: center;
     }
     .formClose {
@@ -538,16 +581,17 @@ footer a {
 }
 
 @media screen and (min-width:1021px) and (max-width: 1700px) {
-    .heroText {
+    .hero {
         font-size: 5rem;
         text-align: center;
+        gap: 8rem;
     }
     .archiveContainer p {
         font-size: 1.75rem;
     }
     .h1 {
         position: relative;
-        font-size: 4rem;
+        font-size: 5rem;
     }
     #conHeader {
         font-size: 3.25rem;
@@ -568,6 +612,13 @@ footer a {
         flex-wrap: wrap;
         max-width: 100%;
     }
+    .contactForm form {
+        bottom: 34rem;
+        opacity: 1;
+    }
+    .formClose {
+        margin-left: 25rem;
+    }
 }
 
 
@@ -581,7 +632,6 @@ footer a {
     flex-direction: column;
     align-items: flex-start;
     background-color: #D7D4DB;
-    border: #1C5D3B solid;
     gap: 1.5rem;
     position: absolute;
     top: 0;
@@ -627,6 +677,7 @@ footer a {
     transition: all 0.2s;
     color: black;
     margin-top: 1rem;
+    margin-left: 1rem;
 }
 #mobile:active {
     transform: scale(0.85);

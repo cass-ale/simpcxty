@@ -83,7 +83,7 @@ function NotHomeHeader() {
 
 {/* Main artist/site title */}
 
-            <p className="h1"><Link to="/" data-tooltip-id='header' data-tooltip-content="Return Home" onClick={handleClick}>simpcxty</Link></p>
+            <p id="title"><Link to="/" data-tooltip-id='header' data-tooltip-content="Return Home" onClick={handleClick}>simpcxty</Link></p>
             <ReactTooltip id="header" />
 
 {/* Socials + Icons */}

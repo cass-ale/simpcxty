@@ -32,11 +32,11 @@ function Contact() {
             <main>
             <div className="contactContainer">
 
-            <section id="conHeader" ref={targetRef}><span style={{fontFamily: "SpecialElite", fontSize: '4rem'}}>Connect With</span> simpcxty</section>
+            <section id="conHeader" ref={targetRef}><span id="conHeader" style={{fontFamily: "SpecialElite", fontSize: '3rem'}}>Connect With</span> simpcxty</section>
 
             <p>If You Are Interested In Working With <span style={{fontFamily: "Kristi", fontSize: "2.65rem"}}>simpcxty</span>, Or Eager To Talk With Him About His Work, Feel Free To Fill Out Our Contact Form, And Our Team Will Be In Touch With You Shortly After. All Inquiries Involving Music, Modeling, Custom Clothing, Or Interviews Can Be Submitted Here.<br /><br /> Please Note That This Inbox Is Managed By The CAPRI Media Administrative Team, And We Only Monitor Our Inbox During U.S. Business Hours (9:00-17:00) On Monday Through Friday. We Look Forward To Hearing From You!</p>
 
-            <button className="button" onClick={openForm}>CONNECT</button>
+            <button className="conButton" onClick={openForm}>CONNECT</button>
             <button className="mobileCon" onClick={mobileForm}>CONNECT</button>
             {showForm && <Form closeForm={closeForm} />}
             </div>
