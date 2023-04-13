@@ -35,7 +35,7 @@ const handleClick = () => {
 
         <div className="footerLinks">
             NAVIGATION
-            <Link to='/'>Home</Link>
+            <Link to='/' onClick={handleClick}>Home</Link>
             {/* <Link to='/PG'>P. G.</Link> */}
             <Link to='/contact' onClick={handleClick}>Contact</Link>
         </div>

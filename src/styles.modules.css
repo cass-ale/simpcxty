@@ -30,10 +30,10 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.39;
 }
 .backgroundTint {
-    background-color: rgba(68, 112, 147, 0.4);
+    background-color: rgba(68, 112, 147, 0.3);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -42,6 +42,8 @@
     z-index: -1;
 }
 /* Added the image and a solid color to add a tint effect and mute the colors of the image */
+
+
 
 /*Header/Navbar css section*/
 .headerBar {
@@ -98,6 +100,8 @@
 .icons a {
     color: black;
 }
+
+
 .internalNav{
     display: 'flex';
     flex-direction: 'row';
@@ -133,6 +137,8 @@
 #internalNav li:hover::after {
     transform: scaleX(1);
 }
+
+
 /* Hero Section CSS */
 .hero {
     display: flex;
@@ -170,6 +176,7 @@
     text-align: center;
 }
 
+
 /* Call to Action button styling */
 .button {
     border: none;
@@ -196,6 +203,7 @@
     color: #D7D4DB;
 }
 
+
 /* Contact Page CSS Styling */
 .contactContainer {
     display: flex;
@@ -216,7 +224,7 @@
     font-size: 1.5rem;
     width: 75rem;
     line-height: 2rem;
-    background-color: rgba(215, 212, 219, 0.75);
+    border: rgba(215, 212, 219, 0.75) solid;
     border-top-left-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;
     padding: 1rem;
@@ -256,6 +264,7 @@
 
 
 
+/* Contact form CSS styling */
 .contactForm {
     height: 10rem;
     width: 100%;
@@ -266,6 +275,7 @@
     align-items: center;
     z-index: 100;
     border: #1C5D3B solid;
+    border-radius: 1rem;
     background-color: #D7D4DB;
     position: relative;
     height: 50rem;
@@ -293,6 +303,12 @@
     background-color: #1C5D3B;
     color: #D7D4DB;
 }
+.formButton:disabled {
+    background-color: #D7D4DB;
+    color: #1C5D3B;
+    border: whitesmoke dotted;
+    cursor: not-allowed;
+}
 .formContents {
     display: flex;
     flex-direction: column;
@@ -315,7 +331,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 2rem;
+    margin: 1rem;
     width: 25rem;
     justify-content: center;
     align-items: center;
@@ -328,9 +344,13 @@
     justify-content: right;
     align-items: flex-end;
     margin-top: 1rem;
-    margin-left: 50rem;
+    margin-left: 70rem;
 }
 
+
+
+
+/* Footer CSS styling */
 footer {
     font-family: 'SpecialELite';
 }
@@ -409,6 +429,12 @@ footer a {
     background-color: #1C5D3B;
     color: #D7D4DB;
 }
+.footerButton:disabled {
+    background-color: #D7D4DB;
+    color: #1C5D3B;
+    border: whitesmoke dotted;
+    cursor: not-allowed;
+}
 #copyright {
     padding: 1.5rem;
     font-size: 1.25rem;
@@ -424,6 +450,53 @@ footer a {
     }
 }
 
+
+/* Medium/Small Laptop screen formatting for smooth transitions */
+@media screen and (min-width:1021px) and (max-width: 1700px) {
+    .hero {
+        font-size: 5rem;
+        text-align: center;
+        gap: 8rem;
+    }
+    .archiveContainer p {
+        font-size: 1.75rem;
+    }
+    .h1 {
+        position: relative;
+        font-size: 5rem;
+    }
+    #conHeader {
+        font-size: 5.5rem;
+    }
+    .contactContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    .contactContainer p {
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .contactForm form {
+        bottom: 36rem;
+        opacity: 1;
+    }
+    .formClose {
+        margin-left: 25rem;
+    }
+}
+
+
+
+
+/* Mobile/Tablet styling Below */
 @media screen and (max-width: 1020px) {
     .headerBar {
         display: flex;
@@ -436,12 +509,14 @@ footer a {
         height: 5rem;
         background-color: #D7D4DB;
     }
-
     #title {
         font-size: 3.75rem;
         padding: 0;
         position: relative;
-        bottom: 3.75rem
+        bottom: 3.75rem;
+    }
+    #title a{
+        color: #447093;
     }
     .icons {
         display: none;
@@ -452,19 +527,13 @@ footer a {
     .navButton {
         display: none;
     }
+
+
     .internalNav li{
         display: none;
     }
-    .footerTop {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: 1rem;
-    }
-    #footerForm input {
-        width: 100%;
-        max-width: 100%;
-    }
+
+
     .hero {
         flex-direction: column;
         align-items: center;
@@ -490,6 +559,60 @@ footer a {
     .cta {
         font-size: 3rem;
         text-align: center;
+    }
+
+
+    main {
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+
+    .contactContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: 100%;
+        padding: 0.5rem;
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .contactContainer p {
+        font-size: 0.8rem;
+        width: 100%;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        text-align: center;
+        border: #D7D4DB solid;
+        border-radius: 0;
+        margin: 0;
+    }    
+    #conHeader {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+
+    .contactForm {
+        height: 100%;
+        width: 100%;
+    }
+    .contactForm form {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: whitesmoke;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        font-size: 1.5rem;
+        z-index: 9999;
+        border-radius: 0;
     }
     .conButton {
         display: none;
@@ -518,46 +641,11 @@ footer a {
         background-color: #1C5D3B;
         color: #D7D4DB;
     }
-    main {
-        width: 100%;
-        padding-top: 5rem;
-    }
-    .contactContainer {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        padding-top: 1rem;
-    }
-    .contactContainer p {
-        font-size: 1rem;
-        width: 100%;
-        max-width: -moz-fit-content;
-        max-width: fit-content;
-        text-align: center;
-    }
-    .contactForm {
-        height: 100%;
-        width: 100%;
-    }
-    .contactForm form {
-        opacity: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: whitesmoke;
-        border: ghostwhite solid;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        font-size: 1.5rem;
-        z-index: 9999;
+    .mobileCon:disabled {
+        background-color: #D7D4DB;
+        color: #1C5D3B;
+        border: whitesmoke dotted;
+        cursor: not-allowed;
     }
     #contactForm input {
         width: 100%;
@@ -570,68 +658,64 @@ footer a {
     .formClose {
         margin-left: 20rem;
     }
-    #conHeader {
-        font-size: 4rem;
-        text-align: center;
-    }
+
+
+
+
     #h1 {
         font-size: 2rem;
     }
 
-}
 
-@media screen and (min-width:1021px) and (max-width: 1700px) {
-    .hero {
-        font-size: 5rem;
-        text-align: center;
-        gap: 8rem;
-    }
-    .archiveContainer p {
-        font-size: 1.75rem;
-    }
-    .h1 {
-        position: relative;
-        font-size: 5rem;
-    }
-    #conHeader {
-        font-size: 3.25rem;
-    }
-    .contactContainer {
-        flex-wrap: wrap;
+
+    .footerTop {
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        padding-top: 1rem;
-    }
-    .contactContainer p {
         text-align: center;
-        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    #simpcxty {
+        font-size: 3rem;
+    }
+    .footerForm {
+        font-size: 1rem;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    #footerForm {
+        font-size: 0.75rem;
+    }
+    #footerForm input {
+        width: 100%;
         max-width: 100%;
     }
-    .contactForm form {
-        bottom: 34rem;
-        opacity: 1;
+    #copyright {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    #songTitle{
+        font-size: 2rem;
+    }
+    .button {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    .button p {
+        text-align: center;
+        font-size: 1.25rem;
     }
     .formClose {
-        margin-left: 25rem;
+        margin-left: 13rem;
+        color: #D7D4DB;
     }
 }
 
-
-@media screen and (min-width: 1020px) {
-    #mobile {
-        display: none;
-    }
-}
 .mobileMenu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #D7D4DB;
+    background-color: #184461;
     gap: 1.5rem;
     position: absolute;
     top: 0;
@@ -648,36 +732,38 @@ footer a {
     list-style: none;
     text-align: center;
     text-decoration: none;
-    transition: all 0.2s;
-    color: black;
+    color: #D7D4DB;
 }
 .mobileMenu li {
     list-style: none;
     text-align: center;
     padding-right: 3.5rem;
     text-decoration: none;
+    transition: all 0.2s;
+    padding: 0;
 }
-.mobileMenu a:hover {
-    text-decoration: underline;
-}
-.mobileMenu a:active{
+.mobileMenu li:active{
     transform: scale(0.85);
 }
 .mobileNav{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin: 1rem;
     justify-content: center;
     align-items: center;
     color: black;
 }
+.mobileNav ul{
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 2.25rem;
+}
 #mobile {
     cursor: pointer;
     transition: all 0.2s;
-    color: black;
+    color: #447093;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 0.75rem;
 }
 #mobile:active {
     transform: scale(0.85);
@@ -695,10 +781,12 @@ footer a {
 }
 .mobileIcons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    gap: 1.5rem;
-    color: black;
+    gap: 1.75rem;
+    color: #D7D4DB;
+    margin-top: 15rem;
 }
