@@ -21,7 +21,7 @@ const handleClick = () => {
   const handleFormReset = () => {
     setFormSubmitted(false);
   };
-      
+
     return (
         <div className="footerContainer">
 
@@ -34,7 +34,6 @@ const handleClick = () => {
 
 
         <div className="footerLinks">
-            NAVIGATION
             <Link to='/' onClick={handleClick}>Home</Link>
             {/* <Link to='/PG'>P. G.</Link> */}
             <Link to='/contact' onClick={handleClick}>Contact</Link>

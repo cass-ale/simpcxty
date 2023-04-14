@@ -389,6 +389,9 @@ footer a {
     align-items: center;
     position: relative;
 }
+#simpcxty:hover {
+    color: #1C5D3B;
+}
 .footerLinks a {
     display: flex;
     flex-direction: column;
