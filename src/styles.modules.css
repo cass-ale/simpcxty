@@ -587,6 +587,9 @@ footer a {
     .formClose {
         margin-left: 25rem;
     }
+    .visuals {
+        display: none;
+    }
 }
 
 
@@ -594,6 +597,9 @@ footer a {
 
 /* Mobile/Tablet styling Below */
 @media screen and (max-width: 1020px) {
+    .visuals {
+        display: none;
+    }
     .headerBar {
         display: flex;
         flex-direction: row;
