@@ -77,7 +77,7 @@
     bottom: 0rem;
     width: 100%;
     height: 0.1rem;
-    background-color: #447093;
+    background-color: #D7D4DB;
     transition: transform .5s ease;
     transform: scaleX(0);
     transform-origin: bottom
@@ -126,7 +126,7 @@
 }
 #internalNav li {
     text-decoration: none;
-    color: #1C5D3B;
+    color: #D7D4DB;
     font-size: 1.5rem;
     border: 1px solid transparent;
     position: relative;
@@ -138,7 +138,7 @@
     bottom: 0rem;
     width: 100%;
     height: 0.1rem;
-    background-color: #1C5D3B;
+    background-color: #184461;
     transition: transform .5s ease;
     transform: scaleX(0);
     transform-origin: bottom
@@ -211,6 +211,88 @@
     background-color: #1C5D3B;
     color: #D7D4DB;
 }
+
+
+
+.visuals {
+    margin-top: 10rem;
+    max-width: 100%;
+}
+
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    gap: 8rem;
+    z-index: 80;
+}
+#topLeft {
+    width: 20rem;
+    height: 23rem;
+    overflow: hidden;
+}
+#topLeft img {
+    width: 17.5rem;
+    height: auto;
+}
+#topCenter {
+    width: 50rem;
+    height: 60rem;
+    overflow: hidden;
+    z-index: 80;
+}
+#topCenter img {
+    width: 50rem;
+    height: auto;
+    position: relative;
+    bottom: 35%;
+}
+/* #topRight {
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    top: 25rem;
+    left: 10rem;
+}
+#topRight img {
+    width: 15rem;
+    height: auto;
+} */
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    gap: 8rem;
+    z-index: 75;
+}
+#center {
+    width: 50rem;
+    height: 100rem;
+}
+#center img {
+    width: 50rem;
+    height: auto;
+    position: relative;
+    bottom: 30%;
+    left: 23%;
+}
+#right {
+    width: 23rem;
+    height: 50rem;
+}
+#right img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 30%
+}
+
+
+
+
+
 
 
 /* Contact Page CSS Styling */

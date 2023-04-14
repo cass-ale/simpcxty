@@ -1,8 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import Music from "./Music";
-import Videos from './Videos';
-import Photos from './Photos';
+import Visuals from './Visuals';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -41,8 +40,7 @@ function Home() {
             </ul>
             <Hero id={'hero'}/>
             <Music id={'music'}/>
-            <Videos id={'visuals'}/>
-            <Photos />
+            <Visuals id={'visuals'}/>
         </main>
         <footer>
             <Footer />
