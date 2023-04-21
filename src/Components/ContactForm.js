@@ -38,9 +38,9 @@ function ContactForm(props) {
             message: "" }}
         validationSchema={
             Yup.object({
-                firstName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
-                lastName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
-                email: Yup.string().min(1, "Please Fill Out This Field").max(100).email("Invalid Email Address").required(""),
+                firstName: Yup.string().matches(/^[a-zA-Z\s]*$/, 'Name can only contain letters and spaces').min(1, "Please Fill Out This Field").max(100).required(""),
+                lastName: Yup.string().matches(/^[a-zA-Z\s]*$/, 'Name can only contain letters and spaces').min(1, "Please Fill Out This Field").max(100).required(""),
+                email: Yup.string().matches(/([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})$/, "Invalid Email").min(1, "Please Fill Out This Field").max(100).email("Invalid Email Address").required(""),
                 message: Yup.string().min(10, "Messages Must Be At Least 10 Characters").max(750, "Please Shorten Your Message").required(""),
               })
         }

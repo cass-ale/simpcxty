@@ -215,78 +215,25 @@
 
 
 .visuals {
-    margin-top: 10rem;
+    margin-top: 5rem;
     max-width: 100%;
 }
 
 
-.row1 {
+.photos {
     display: flex;
     justify-content: center;
-    width: 95%;
-    gap: 8rem;
-    z-index: 80;
+    align-items: center;
 }
-#topLeft {
-    width: 20rem;
-    height: 23rem;
-    overflow: hidden;
-}
-#topLeft img {
-    width: 17.5rem;
+.photos img {
     height: auto;
+    width: 100rem;
 }
-#topCenter {
-    width: 50rem;
-    height: 60rem;
-    overflow: hidden;
-    z-index: 80;
-}
-#topCenter img {
-    width: 50rem;
-    height: auto;
+iframe {
     position: relative;
-    bottom: 35%;
-}
-/* #topRight {
-    width: 25rem;
-    height: 25rem;
-    overflow: hidden;
-    position: relative;
-    top: 25rem;
-    left: 10rem;
-}
-#topRight img {
-    width: 15rem;
-    height: auto;
-} */
-.row2 {
-    display: flex;
-    justify-content: space-evenly;
-    width: 95%;
-    gap: 8rem;
-    z-index: 75;
-}
-#center {
-    width: 50rem;
-    height: 100rem;
-}
-#center img {
-    width: 50rem;
-    height: auto;
-    position: relative;
-    bottom: 30%;
-    left: 23%;
-}
-#right {
-    width: 23rem;
-    height: 50rem;
-}
-#right img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    left: 30%
+    top: 27rem;
+    left: 41rem;
+    margin: 0;
 }
 
 
