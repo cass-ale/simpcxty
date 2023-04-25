@@ -43,18 +43,19 @@ const socials = [
     }
 ]
 
-const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
+
 
 function MobileMenu(props) {
     const onClick = () => {
         props.closeMenu();
     }
-
+    const handleClick = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+        props.closeMenu();
+      };
 
     useEffect(() => {
         function handleResize() {
@@ -76,6 +77,7 @@ function MobileMenu(props) {
             <ul>
                 <li><a href="/" onClick={handleClick}>Home</a></li><br />
                 <li><a href="/contact" onClick={handleClick}>Contact</a></li><br />
+                <li><a href="/press" onClick={handleClick}>Press</a></li><br />
                 {/* <li><a href="/PG" onClick={handleClick}>P. G.</a></li><br /> */}
             </ul>
             {<nav className="mobileIcons">

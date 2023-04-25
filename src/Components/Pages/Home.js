@@ -34,7 +34,7 @@ function Home() {
             fontFamily: 'SpecialElite',
             fontSize: '2.5rem',
             cursor: 'pointer'}}>
-                <li onClick={() => {handleScrollToComponent('hero')}}>Latest</li>
+                {/* <li onClick={() => {handleScrollToComponent('hero')}}>Latest</li> */}
                 <li onClick={() => {handleScrollToComponent('music')}}>Sounds</li>
                 <li onClick={() => {handleScrollToComponent('visuals')}}>Visuals</li>
             </ul>
