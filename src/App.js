@@ -1,9 +1,10 @@
 import './styles.modules.css'
 import './index.css'
 import React from 'react';
-import Home from './Components/Home';
-import Contact from './Components/Contact'
+import Home from './Components/Pages/Home';
+import Contact from './Components/Pages/Contact'
 import Store from './Components/PG/Store';
+import Press from './Components/Pages/Press';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/contact' element={<Contact />} />
+        <Route exact path='/press' element={<Press />} />
         <Route exact path='/PG' element={<Store />} />
       </Routes>
     </Router>

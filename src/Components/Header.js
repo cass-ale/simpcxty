@@ -76,8 +76,9 @@ function Header() {
 
 {/*Navigation Links: first third of navbar. Unordered list to be styled in CSS to be a horizontal list with proper styling.*/}
             <ul className="nav">
-                {/* <li><Link to="/PG">P. G.</Link></li> */}
-                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/contact" onClick={handleClick}>Contact</Link></li>
+                <li><Link to="/press" onClick={handleClick}>Press</Link></li>
+                {/* <li><Link to="/PG" onClick={handleClick}>P. G.</Link></li>                 */}
             </ul>
 
 
@@ -103,10 +104,10 @@ function Header() {
                 <a href={socials[4].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[4].icon} size="2x" />
                 </a>
-                <a href={socials[5].url} target="_blank" rel="noopener noreferrer">
+                <a id="spotify" href={socials[5].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[5].icon} size="2x" />
                 </a>
-                <a href={socials[6].url} target="_blank" rel="noopener noreferrer">
+                <a id="apple" href={socials[6].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[6].icon} size="2x" />
                 </a>
             </nav>}

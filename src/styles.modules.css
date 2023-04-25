@@ -42,7 +42,9 @@
     z-index: -1;
 }
 /* Added the image and a solid color to add a tint effect and mute the colors of the image */
-
+h2 {
+    font-family: 'SpecialElite';
+}
 
 
 /*Header/Navbar css section*/
@@ -88,9 +90,9 @@
 #title {
     font-family: "Kristi";
     font-size: 6.5rem;
-    padding-left: 15.5rem;
+    padding-left: 9rem;
 }
-/* Set left padding to ~9.5rem wehn P>G> link is rendered */
+/* Set left padding to ~3.25rem when P.G. link is rendered */
 #title a {
     text-decoration: none;
     color: black;
@@ -155,6 +157,7 @@
     justify-content: center;
     align-items: center;
     gap: 24rem;
+    margin-top: 5rem;
 }
 .hero a {
     text-decoration: none;
@@ -213,19 +216,79 @@
 }
 .music {
     max-width: 100%;
-    margin-top: 7.5rem;
-    margin-bottom: 5rem;
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
 }
-.music section {
+.music h2 {
+    font-family: 'SpecialElite';
+    font-size: 2.75rem;
+    margin-bottom: 0;
+}
+#simpSpan {
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+    color: #184461;
+}
+.music section{
+    text-align: center;
+}
+.players {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    position: relative;
-    bottom: 20rem;
-    right: 40rem;
     gap: 5rem;
+    position: relative;
+    right: 40rem;
+    bottom: 25rem;
 }
+.ten12 {
+    width: 31.25rem;
+    height: 31.25rem;
+    overflow: hidden;
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
+    
+}
+.ten12 img{
+    width: 31.25rem;
+    height: auto;
+    cursor: pointer;
+}
+.tenLinks {
+    display: flex;
+    gap: 15rem;
+}
+.tenLinks a {
+    color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.tenLinks a:hover {
+    transform: scale(1.25);
+}
+#spotify:hover {
+    color: #1ed760;
+}
+#apple:hover {
+    color: #fc3c44;
+}
+.tenLinks a:active {
+    transform: scale(0.85);
+}
+
+
+
+
+
+
+
+
+
+
 
 .visuals {
     margin-top: 5rem;
@@ -326,8 +389,9 @@ iframe {
     align-items: center;
     z-index: 100;
     border: #1C5D3B solid;
+    color: #D7D4DB;
     border-radius: 1rem;
-    background-color: #D7D4DB;
+    background-color: #184461;
     position: relative;
     height: 50rem;
     bottom: 40.4rem;
@@ -337,7 +401,7 @@ iframe {
 }
 .formButton {
     border: none;
-    background-color: #184461;
+    background-color: #1C5D3B;
     font-family: "SpecialElite";
     font-size: 1.5rem;
     color: #D7D4DB;
@@ -397,6 +461,61 @@ iframe {
     margin-top: 1rem;
     margin-left: 70rem;
 }
+
+
+
+
+
+
+
+.press {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+#pressh2{
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    font-family: 'SpecialElite';
+}
+.press p {
+    margin: 0;
+    font-family: 'SpecialElite';
+    color: #184461;
+}
+.press a {
+    color: #184461;
+    cursor: pointer;
+}
+.articles {
+    display: flex;
+    gap: 15rem;
+}
+.articles a {
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.articles a:hover{
+    transform: scale(1.2);
+}
+.articles a:active {
+    transform: scale(0.85);
+}
+.articles img {
+    width: 40rem;
+    height: auto;
+    box-shadow: 2rem 3rem 2rem rgba(0, 0, 0, 0.25);
+    border: #447093 .12rem solid;
+}
+
+
+
+
+
+
+
+
 
 
 
