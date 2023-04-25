@@ -211,8 +211,21 @@
     background-color: #1C5D3B;
     color: #D7D4DB;
 }
-
-
+.music {
+    max-width: 100%;
+    margin-top: 7.5rem;
+    margin-bottom: 5rem;
+}
+.music section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 20rem;
+    right: 40rem;
+    gap: 5rem;
+}
 
 .visuals {
     margin-top: 5rem;

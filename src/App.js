@@ -3,7 +3,7 @@ import './index.css'
 import React from 'react';
 import Home from './Components/Home';
 import Contact from './Components/Contact'
-import Store from './Components/Store';
+import Store from './Components/PG/Store';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 
