@@ -255,7 +255,7 @@ h2 {
     width: 100%;
     background-image: url(../src/Images/IMG_7377.JPG);
     background-size: cover;
-    background-position: 50% 15%;
+    background-position: 50% 55%;
     background-attachment: fixed;
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -777,7 +777,8 @@ footer a {
         box-shadow: none;
     }
     .ten12 img {
-        width: 21rem;
+        width: 100%;
+        height: auto;
     }
     .tenLinks {
         gap: 10rem;
@@ -788,8 +789,8 @@ footer a {
     .firstAlbum {
         color: white;
         background-position: center;
-        background-position: 0%;
         background-size: cover;
+        background-attachment: initial;
     }
     .tenLinks a {
         color: #D7D4DB;
