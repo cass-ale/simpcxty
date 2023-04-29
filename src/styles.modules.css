@@ -784,9 +784,13 @@ footer a {
     }
     .firstAlbum {
         color: #fc6d42;
+        background-position: center;
     }
     #simpSpan {
         color: #fc6d42;
+    }
+    .tenLinks a {
+        color: #D7D4DB;
     }
 
     .photos {
