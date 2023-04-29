@@ -221,7 +221,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
 }
 .music h2 {
     font-family: 'SpecialElite';
@@ -257,6 +256,7 @@ h2 {
     background-size: cover;
     background-position: 50% 55%;
     background-attachment: fixed;
+    margin-top: 5rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
     border-top: #D7D4DB solid 0.1rem;
@@ -293,6 +293,22 @@ h2 {
 }
 .tenLinks a:active {
     transform: scale(0.85);
+}
+.simpSession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    background-image: url(../src/Images/AA8A283101.JPG);
+    background-size: cover;
+    background-position: 50% 20%;
+    background-attachment: fixed;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    border-bottom: #D7D4DB solid 0.1rem;
+    color: white;
 }
 
 
@@ -791,9 +807,25 @@ footer a {
         background-position: center;
         background-size: cover;
         background-attachment: initial;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        border: none;
     }
     .tenLinks a {
         color: #D7D4DB;
+    }
+    .simpSession {
+        color: white;
+        background-position: center;
+        background-size: cover;
+        background-attachment: initial;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        border: none;
+    }
+    #yt {
+        width: 100%;
+        height: auto;
     }
 
     .photos {
@@ -819,7 +851,7 @@ footer a {
         width: 100%;
         max-width: -moz-fit-content;
         max-width: fit-content;
-        text-align: center;
+        text-align: justify;
         border: #D7D4DB solid;
         border-radius: 0;
         margin: 0;
@@ -901,8 +933,13 @@ footer a {
 
     .press {
         text-align: center;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        gap: 1.5rem;
+    }
+    .press p {
+        margin: 2rem;
+    }
+    #pressh2 {
+        margin: 2rem;
     }
     .articles {
         flex-direction: column;
@@ -913,6 +950,9 @@ footer a {
     }
     .articles img {
         width: 100%;
+    }
+    .articles a:hover {
+        transform: scale(1);
     }
 
     #h1 {
