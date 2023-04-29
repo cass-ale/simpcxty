@@ -231,8 +231,8 @@ h2 {
 #simpSpan {
     margin: 0;
     padding: 0;
-    font-size: 5rem;
-    color: #184461;
+    font-size: 7.5rem;
+    color: #86c4f7
 }
 .music section{
     text-align: center;
@@ -246,10 +246,23 @@ h2 {
     right: 40rem;
     bottom: 25rem;
 }
+.firstAlbum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    background-image: url(../src/Images/IMG_7377.JPG);
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border-top: #D7D4DB solid 0.1rem;
+    border-bottom: #D7D4DB solid 0.1rem;
+}
 .ten12 {
     width: 31.25rem;
     height: 31.25rem;
-    overflow: hidden;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
 
 }
@@ -768,6 +781,12 @@ footer a {
     }
     .music {
         margin-bottom: 5rem;
+    }
+    .firstAlbum {
+        color: #fc6d42;
+    }
+    #simpSpan {
+        color: #fc6d42;
     }
 
     .photos {
