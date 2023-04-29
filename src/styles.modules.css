@@ -901,6 +901,8 @@ footer a {
 
     .press {
         text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
     .articles {
         flex-direction: column;
