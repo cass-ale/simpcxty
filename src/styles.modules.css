@@ -1,5 +1,5 @@
 /* Font Imports: Kristi and SpecialElite */
-@font-face {
+/* @font-face {
     font-family: "Kristi";
     src: url(./Fonts/Kristi-Regular.ttf) format('truetype');
     font-weight: normal;
@@ -17,9 +17,9 @@
 .appBackground {
     position: relative;
     height: 100vh;
-}
+} */
 /* Background Image for the simpcxty version of the app is a photo that complements the cover of the latest release; same with the color pallete */
-.backgroundImage {
+/* .backgroundImage {
     position: fixed;
     top: 0;
     left: 0;
@@ -40,15 +40,15 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-}
+} */
 /* Added the image and a solid color to add a tint effect and mute the colors of the image */
-h2 {
+/* h2 {
     font-family: 'SpecialElite';
-}
+} */
 
 
 /*Header/Navbar css section*/
-.headerBar {
+/* .headerBar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -72,7 +72,7 @@ h2 {
     color: #D7D4DB;
 }
 /* Underline animation for hovering over navigation items */
-.nav a::after {
+/* .nav a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -91,9 +91,9 @@ h2 {
     font-family: "Kristi";
     font-size: 6.5rem;
     padding-left: 9rem;
-}
+} */
 /* Set left padding to ~3.25rem when P.G. link is rendered */
-#title a {
+/* #title a {
     text-decoration: none;
     color: black;
     cursor: grabbing;
@@ -110,10 +110,10 @@ h2 {
 }
 .icons a:hover {
     color: #447093;
-}
+} */
 
 
-.internalNav{
+/* .internalNav{
     display: 'flex';
     flex-direction: 'row';
     align-items: 'center';
@@ -147,11 +147,11 @@ h2 {
 }
 #internalNav li:hover::after {
     transform: scaleX(1);
-}
+} */
 
 
 /* Hero Section CSS */
-.hero {
+/* .hero {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -186,11 +186,11 @@ h2 {
     font-size: 4rem;
     color: #184461;
     text-align: center;
-}
+} */
 
 
 /* Call to Action button styling */
-.button {
+/* .button {
     border: none;
     background-color: #184461;
     font-family: "SpecialElite";
@@ -341,7 +341,7 @@ iframe {
     top: 27rem;
     left: 41rem;
     margin: 0;
-}
+} */
 
 
 
@@ -350,7 +350,7 @@ iframe {
 
 
 /* Contact Page CSS Styling */
-.contactContainer {
+/* .contactContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -360,8 +360,8 @@ iframe {
     margin-left: 10.85rem;
     margin-right: 20rem;
     font-family: 'SpecialElite';
-}
-#conHeader {
+} */
+/* #conHeader {
     font-size: 6rem;
     font-family: 'Kristi';
 }
@@ -405,12 +405,12 @@ iframe {
     transform: scale(0.85);
     background-color: #1C5D3B;
     color: #D7D4DB;
-}
+} */
 
 
 
 /* Contact form CSS styling */
-.contactForm {
+/* .contactForm {
     height: 10rem;
     width: 100%;
 }
@@ -491,7 +491,7 @@ iframe {
     align-items: flex-end;
     margin-top: 1rem;
     margin-left: 70rem;
-}
+} */
 
 
 
@@ -499,7 +499,7 @@ iframe {
 
 
 
-.press {
+/* .press {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -538,7 +538,7 @@ iframe {
     height: auto;
     box-shadow: 2rem 3rem 2rem rgba(0, 0, 0, 0.25);
     border: #447093 .12rem solid;
-}
+} */
 
 
 
@@ -552,7 +552,7 @@ iframe {
 
 
 /* Footer CSS styling */
-footer {
+/* footer {
     font-family: 'SpecialELite';
 }
 footer a {
@@ -632,8 +632,8 @@ footer a {
     transform: scale(0.85);
     background-color: #1C5D3B;
     color: #D7D4DB;
-}
-.footerButton:disabled {
+} */
+/* .footerButton:disabled {
     background-color: #D7D4DB;
     color: #1C5D3B;
     border: whitesmoke dotted;
@@ -642,21 +642,21 @@ footer a {
 #copyright {
     padding: 1.5rem;
     font-size: 1.25rem;
-}
+} */
 
 /* Hides mobile/tablet menu button when on Large screens */
-@media screen and (min-width: 1020px) {
+/* @media screen and (min-width: 1020px) {
     #mobile {
         display: none;
     }
     .mobileCon {
         display: none;
     }
-}
+} */
 
 
 /* Medium/Small Laptop screen formatting for smooth transitions */
-@media screen and (min-width:1021px) and (max-width: 1700px) {
+/* @media screen and (min-width:1021px) and (max-width: 1700px) {
     .hero {
         font-size: 5rem;
         text-align: center;
@@ -704,13 +704,13 @@ footer a {
     .photos img {
         width: 100%;
     }
-}
+} */
 
 
 
 
 /* Mobile/Tablet styling Below */
-@media screen and (max-width: 1020px) {
+/* @media screen and (max-width: 1020px) {
     .headerBar {
         display: flex;
         flex-direction: row;
@@ -1085,4 +1085,4 @@ footer a {
     gap: 1.75rem;
     color: #D7D4DB;
     margin-top: 15rem;
-}
+} */
