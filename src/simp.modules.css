@@ -89,7 +89,8 @@ header ul {
     height: 200vh;
     background-image: url(../src/Images/0B739AF6-EEDF-431A-84C6-25E0C440C593.JPG);
     background-size: cover;
-    background-position: 50% 75%;
+    background-position: 50% 30%;
+    background-attachment: fixed;
 }
 #img8 {
     width: 100%;
@@ -97,6 +98,7 @@ header ul {
     background-image: url(../src/Images/seq1.jpg);
     background-size: contain;
     background-position: 50% 43%;
+    background-attachment: fixed;
     animation: pic8 6s step-end infinite;
 }
 @keyframes pic8 {
