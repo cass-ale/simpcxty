@@ -11,7 +11,8 @@ function Music() {
             <MusicHeader />
         </header>
 
-        <main>
+        <main className='music'>
+            <div className='musicBG' />
 
         </main>
 

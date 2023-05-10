@@ -41,27 +41,79 @@ header ul {
     background-size: cover;
     background-position: 50% 60%;
 }
-#img4 {
-    width: 100%;
-    height: 200vh;
-    background-image: url(../src/Images/firehouse.JPG);
-    background-size: cover;
-    background-position: 50% 85%;
-}
-#img3 {
-    width: 100%;
-    height: 200vh;
-    background-image: url(../src/Images/IMG_2993.JPG);
-    background-size: cover;
-    background-position: 50% 95%;
-}
 #img2 {
     width: 100%;
     height: 200vh;
     background-image: url(../src/Images/IMG_6325.JPG);
     background-size: cover;
     background-position: 50% 50%;
+    background-attachment: fixed;
 }
+#img3 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/IMG_6330.JPG);
+    background-size: cover;
+    background-position: 50% 95%;
+    animation: pic3 5s step-end infinite;
+}
+@keyframes pic3 {
+    25% {background-image: url(../src/Images/IMG_6419.JPG)}
+    50% {background-image: url(../src/Images/IMG_6330.JPG)}
+    75% {background-image: url(../src/Images/IMG_6419.JPG)}
+    100% {background-image: url(../src/Images/IMG_6330.JPG)}
+}
+#img4 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/IMG_2993.JPG);
+    background-size: cover;
+    background-position: 50% 95%;
+}
+#img7 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/126.JPEG);
+    background-size: cover;
+    background-position: 50% 100%;
+}
+#img5 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/IMG_0009.JPG);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+#img6 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/0B739AF6-EEDF-431A-84C6-25E0C440C593.JPG);
+    background-size: cover;
+    background-position: 50% 75%;
+}
+#img8 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../src/Images/seq1.jpg);
+    background-size: contain;
+    background-position: 50% 43%;
+    animation: pic8 6s step-end infinite;
+}
+@keyframes pic8 {
+    8% {background-image: url(../src/Images/seq2.jpg)}
+    16% {background-image: url(../src/Images/seq3.jpg)}
+    24% {background-image: url(../src/Images/seq4.jpg)}
+    32% {background-image: url(../src/Images/seq5.jpg)}
+    40% {background-image: url(../src/Images/seq6.jpg)}
+    48% {background-image: url(../src/Images/seq7.jpg)}
+    56% {background-image: url(../src/Images/seq8.jpg)}
+    64% {background-image: url(../src/Images/seq9.jpg)}
+    72% {background-image: url(../src/Images/seq10.jpg)}
+    80% {background-image: url(../src/Images/seq11.jpg)}
+    88% {background-image: url(../src/Images/seq12.jpg)}
+    96% {background-image: url(../src/Images/seq11.jpg)}
+}
+
 
 #mainText {
     display: flex;
@@ -81,6 +133,21 @@ header ul {
 #newSong {
     font-family: "SpecialElite";
 }
+
+
+.musicBG {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/background.JPEG);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    opacity: 0.5;
+    position: fixed;
+}
+
+
+
 
 
 
@@ -104,5 +171,11 @@ footer {
 footer ul {
     list-style: none;
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
+}
+#footerForm {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75rem;
 }

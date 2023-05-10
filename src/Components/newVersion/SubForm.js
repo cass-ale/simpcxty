@@ -1,6 +1,9 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { Button } from '@chakra-ui/react'
+
+
 
 function SubForm(props) {
   const formRef = React.useRef(null);
@@ -46,12 +49,12 @@ function SubForm(props) {
             <div className="footerForm">
             <label htmlFor="email">NEWSLETTER</label>
             <section id="footerForm">
-            <Field type="email" name="email" id='email' style={{fontFamily: 'SpecialElite'}} placeholder='Enter Your Email . . .'/>
+            <Field type="email" name="email" id='email' style={{fontFamily: 'SpecialElite', color: "black", padding: "0.25rem"}} placeholder='Enter Your Email . . .'/>
             <ErrorMessage name="email" />
             {dirty && (
-            <button className='footerButton' type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
+            <Button colorScheme="whiteAlpha" className='footerButton' type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
               SUBSCRIBE
-            </button>
+            </Button>
             )}
             </section>
             </div>
