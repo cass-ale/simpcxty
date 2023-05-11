@@ -63,7 +63,7 @@ header ul {
     75% {background-image: url(../src/Images/IMG_6419.JPG)}
     100% {background-image: url(../src/Images/IMG_6330.JPG)}
 }
-#img4 {
+#img5 {
     width: 100%;
     height: 200vh;
     background-image: url(../src/Images/IMG_2993.JPG);
@@ -73,24 +73,23 @@ header ul {
 #img7 {
     width: 100%;
     height: 200vh;
-    background-image: url(../src/Images/126.JPEG);
+    background-image: url(../src/Images/IMG_0017.JPG);
     background-size: cover;
     background-position: 50% 100%;
 }
-#img5 {
+#img6 {
     width: 100%;
     height: 200vh;
     background-image: url(../src/Images/IMG_0009.JPG);
     background-size: cover;
     background-position: 50% 80%;
 }
-#img6 {
+#img4 {
     width: 100%;
-    height: 200vh;
-    background-image: url(../src/Images/0B739AF6-EEDF-431A-84C6-25E0C440C593.JPG);
+    height: 290vh;
+    background-image: url(../src/Images/IMG_3107.PNG);
     background-size: cover;
-    background-position: 50% 30%;
-    background-attachment: fixed;
+    background-position: 50% 42%;
 }
 #img8 {
     width: 100%;
@@ -99,7 +98,7 @@ header ul {
     background-size: contain;
     background-position: 50% 43%;
     background-attachment: fixed;
-    animation: pic8 6s step-end infinite;
+    animation: pic8 3s step-end infinite;
 }
 @keyframes pic8 {
     8% {background-image: url(../src/Images/seq2.jpg)}
@@ -139,16 +138,30 @@ header ul {
 
 .musicBG {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     background-image: url(../src/Images/background.JPEG);
     background-size: cover;
     background-position: 50% 50%;
-    background-attachment: fixed;
+    z-index: 0;
+}
+.fader {
+    width: 100%;
+    height: 100vh;
+    background-color: #D7D4DB;
     opacity: 0.5;
-    position: fixed;
+    z-index: 1;
+    position: relative;
+    bottom: 35rem;
 }
 
-
+.firstAlbum {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../src/Images/IMG_7377.JPG);
+    background-size: cover;
+    background-position: 50% 55%;
+    background-attachment: fixed;
+}
 
 
 

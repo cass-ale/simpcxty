@@ -151,20 +151,24 @@
 
 
 /* Hero Section CSS */
-/* .hero {
+.hero {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 24rem;
-    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 15rem;
+    z-index: 999;
 }
 .hero a {
     text-decoration: none;
 }
 .heroImage img {
-    width: 31.25rem;
-    height: 31.25rem;
+    width: 35rem;
+    height: 35rem;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
     transition: all 0.5s;
     cursor: pointer;
@@ -186,11 +190,11 @@
     font-size: 4rem;
     color: #184461;
     text-align: center;
-} */
+}
 
 
 /* Call to Action button styling */
-/* .button {
+ .button {
     border: none;
     background-color: #184461;
     font-family: "SpecialElite";
@@ -214,6 +218,7 @@
     background-color: #1C5D3B;
     color: #D7D4DB;
 }
+/*
 .music {
     max-width: 100%;
     margin-top: 15rem;
@@ -245,24 +250,7 @@
     right: 40rem;
     bottom: 25rem;
 }
-.firstAlbum {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    width: 100%;
-    background-image: url(../src/Images/IMG_7377.JPG);
-    background-size: cover;
-    background-position: 50% 55%;
-    background-attachment: fixed;
-    margin-top: 5rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    border-top: #D7D4DB solid 0.1rem;
-    border-bottom: #D7D4DB solid 0.1rem;
-    color: white;
-}
+
 .ten12 {
     width: 31.25rem;
     height: 31.25rem;

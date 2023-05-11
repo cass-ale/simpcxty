@@ -49,10 +49,10 @@ function SubForm(props) {
             <div className="footerForm">
             <label htmlFor="email">NEWSLETTER</label>
             <section id="footerForm">
-            <Field type="email" name="email" id='email' style={{fontFamily: 'SpecialElite', color: "black", padding: "0.25rem"}} placeholder='Enter Your Email . . .'/>
+            <Field type="email" name="email" id='email' style={{fontFamily: 'SpecialElite', color: "black", padding: "0.25rem"}} placeholder='EMAIL ADDRESS'/>
             <ErrorMessage name="email" />
             {dirty && (
-            <Button colorScheme="whiteAlpha" className='footerButton' type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
+            <Button colorScheme="whiteAlpha" type="submit" disabled={isValid === false || Object.keys(errors).length > 0}>
               SUBSCRIBE
             </Button>
             )}

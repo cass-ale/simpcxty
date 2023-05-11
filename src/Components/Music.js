@@ -12,12 +12,6 @@ import {
 function Music() {
     return (
         <div className="music" id="music">
-            <h2>FAN FAVORITES</h2>
-            <section className="players">
-                <Spotify link="https://open.spotify.com/track/5Et9tEPKeKNPvTjMa7ARly?si=93abac6ea4cd403c" />
-                <Spotify link="https://open.spotify.com/track/7MGyNQLnIplRU7BXA4YfOV?si=9114d63457e64a5a" />
-                <Spotify link="https://open.spotify.com/track/09LSVcdvGkyi8ykv1xdFsO?si=a4ca2f182257408a" />
-            </section>
             <section className="firstAlbum">
             <section>
                 <h2>TEN12, An Album By</h2> <span id="simpSpan" style={{fontFamily: "Kristi"}}>simpcxty</span>

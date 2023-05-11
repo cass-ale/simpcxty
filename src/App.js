@@ -1,5 +1,6 @@
-import './simp.modules.css'
-import './index.css'
+import './simp.modules.css';
+import "./styles.modules.css";
+import './index.css';
 import React from 'react';
 import Home from './Components/newVersion/Home';
 import Contact from './Components/newVersion/Contact'
