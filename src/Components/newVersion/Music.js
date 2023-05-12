@@ -2,13 +2,15 @@ import React from 'react'
 import MusicHeader from "./MusicHeader";
 import Footer from './Footer';
 import Hero from '../Hero';
+import ScrollToTopOnMount from '../Scroll';
+import TenTwelve from './TenTwelve';
 
 
 
 function Music() {
     return (
         <>
-  
+        <ScrollToTopOnMount />
         <header>
             <MusicHeader />
         </header>
@@ -19,9 +21,12 @@ function Music() {
 
             <div className='fader' />
         </div>
-            <section className='firstAlbum'>
-            Yo
+            <div className='firstAlbum'>
+            <section className='tracklist'>
+                TEN12, An Album By <span id='simp'>simpcxty</span>
             </section>
+                <TenTwelve />
+            </div>
 
         </main>
 

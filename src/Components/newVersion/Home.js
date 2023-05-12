@@ -1,10 +1,12 @@
 import React from 'react'
 import HomeHeader from './HomeHeader';
 import Footer from './Footer';
+import ScrollToTopOnMount from '../Scroll';
 
 function Home() {
     return (
         <>
+        <ScrollToTopOnMount />
         <header>
             <HomeHeader />
         </header>

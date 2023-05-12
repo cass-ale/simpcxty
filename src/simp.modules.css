@@ -153,17 +153,50 @@ header ul {
     position: relative;
     bottom: 35rem;
 }
-
+.tracklist {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.tracklist span {
+    font-size: 4.5rem;
+}
 .firstAlbum {
     width: 100%;
     height: 100vh;
-    background-image: url(../src/Images/IMG_7377.JPG);
+    background-image: url(../src/Images/IMG_7376.JPG);
     background-size: cover;
-    background-position: 50% 55%;
+    background-position: 50% 22%;
     background-attachment: fixed;
+    padding: 2.5rem;
+    color: white;
+    font-family: "SpecialElite";
 }
-
-
+.firstAlbum a {
+    transition: all 0.5s;
+}
+#songLinks {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+#songTitles {
+    text-align: right;
+}
+#spotify:hover {
+    color: #1ed760;
+}
+#apple:hover {
+    color: #fc3c44;
+}
+#amazon:hover {
+    color: #23d1da;
+}
+#soundcloud:hover {
+    color: #ff5600;
+}
 
 
 
@@ -176,7 +209,7 @@ footer {
     position: fixed;
     bottom: 0;
     font-family: "SpecialElite";
-    margin-bottom: 5rem;
+    margin-bottom: 2.05rem;
     color: white;
     z-index: 9999;
 }
