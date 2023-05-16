@@ -36,12 +36,12 @@ header ul {
 
 #img1 {
     width: 100%;
-    height: 100vh;
-    background-image: url(../src/Images/IMG_6370.JPG);
+    height: 200vh;
+    background-image: url(../src/Images/126.JPEG);
     background-size: cover;
-    background-position: 50% 60%;
+    background-position: 50% 100%;
 }
-#img2 {
+#img3 {
     width: 100%;
     height: 200vh;
     background-image: url(../src/Images/IMG_6325.JPG);
@@ -49,13 +49,13 @@ header ul {
     background-position: 50% 50%;
     background-attachment: fixed;
 }
-#img3 {
+#img2 {
     width: 100%;
-    height: 200vh;
+    height: 150vh;
     background-image: url(../src/Images/IMG_6330.JPG);
     background-size: cover;
-    background-position: 50% 95%;
-    animation: pic3 5s step-end infinite;
+    background-position: 50% 80%;
+    animation: pic3 6s step-end infinite;
 }
 @keyframes pic3 {
     25% {background-image: url(../src/Images/IMG_6419.JPG)}
@@ -65,7 +65,7 @@ header ul {
 }
 #img5 {
     width: 100%;
-    height: 200vh;
+    height: 150vh;
     background-image: url(../src/Images/IMG_2993.JPG);
     background-size: cover;
     background-position: 50% 95%;
@@ -73,23 +73,23 @@ header ul {
 #img7 {
     width: 100%;
     height: 200vh;
-    background-image: url(../src/Images/IMG_0017.JPG);
+    background-image: url(../src/Images/IMG_3612.JPG);
     background-size: cover;
     background-position: 50% 100%;
 }
 #img6 {
     width: 100%;
     height: 200vh;
-    background-image: url(../src/Images/IMG_0009.JPG);
+    background-image: url(../src/Images/IMG_2688.JPG);
     background-size: cover;
     background-position: 50% 80%;
 }
 #img4 {
     width: 100%;
-    height: 290vh;
-    background-image: url(../src/Images/IMG_3107.PNG);
+    height: 220vh;
+    background-image: url(../src/Images/0B739AF6-EEDF-431A-84C6-25E0C440C593.JPG);
     background-size: cover;
-    background-position: 50% 42%;
+    background-position: 50% 100%;
 }
 #img8 {
     width: 100%;
@@ -153,6 +153,13 @@ header ul {
     position: relative;
     bottom: 35rem;
 }
+
+.latest img {
+    width: 50vw;
+    height: auto;
+}
+
+
 .tracklist {
     text-align: center;
     font-size: 3.5rem;
@@ -183,7 +190,7 @@ header ul {
     gap: 1rem;
 }
 #songTitles {
-    text-align: right;
+    text-align: center;
 }
 #spotify:hover {
     color: #1ed760;
@@ -197,8 +204,26 @@ header ul {
 #soundcloud:hover {
     color: #ff5600;
 }
+#vid {
+    width: 100vw;
+    height: 100vh;
+}
 
 
+.simpsesh {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 12.5rem;
+    background-image: url(../src/Images/6.JPEG);
+    background-size: cover;
+    background-position: 50% 30%;
+    background-attachment: fixed;
+}
+.simpsesh iframe {
+    width: 60%;
+}
 
 footer {
     display: flex;
