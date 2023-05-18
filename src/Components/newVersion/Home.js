@@ -13,9 +13,7 @@ function Home() {
 
         <main>
 
-        <section id='mainText'><span id='simp'>simpcxty</span>
-        {/* <span id='newSong'>Saturday</span> */}
-        </section>
+        <section id='mainText'><span id='simp'>simpcxty</span></section>
 
             <div id="img2"></div>
             <div id='img1'></div>

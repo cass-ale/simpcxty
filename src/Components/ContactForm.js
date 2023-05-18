@@ -87,7 +87,7 @@ function ContactForm(props) {
                 {dirty && (
             <input className='mobileCon' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
                 {dirty && (
-            <input className='formButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1.5rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
+            <input className='formButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'0.5rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
             </section>
 
 

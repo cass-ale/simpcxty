@@ -1,6 +1,4 @@
 import React, {useState, useRef} from "react";
-import Header from "../Header";
-import Footer from '../Footer';
 import Form from '../ContactForm'
 
 function Contact() {
@@ -25,9 +23,6 @@ function Contact() {
     }
     return (
         <>
-            <header>
-                <Header />
-            </header>
 
             <main>
             <div className="contactContainer">
@@ -42,10 +37,6 @@ function Contact() {
             </div>
 
             </main>
-
-            <footer>
-                <Footer />
-            </footer>
         </>
     )
 }

@@ -13,6 +13,7 @@
 }
 :root {
     font-size: 100%;
+    background-color: black;
 }
 
 header {
@@ -251,4 +252,182 @@ footer ul {
     align-items: center;
     gap: 1rem;
     font-size: 0.75rem;
+}
+
+
+
+.contactPage {
+    background-image: url(./Images/AA8A283101.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    width: 100vw;
+    height: 100vh;
+    animation: conbg 10s step-end infinite;
+}
+
+@keyframes conbg {
+    25% {background-image: url(./Images/AA8A281301.JPG);
+        background-position: 50% 35%;}
+    50% {background-image: url(./Images/AA8A283101.JPG);
+        background-position: 50% 25%;}
+    75% {background-image: url(./Images/AA8A281301.JPG);
+        background-position: 50% 35%;}
+    100% {background-image: url(./Images/AA8A283101.JPG);
+        background-position: 50% 25%;}
+}
+
+/* Contact Page CSS Styling */
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-bottom: 2.75rem;
+    margin-left: 10.85rem;
+    margin-right: 20rem;
+    font-family: 'SpecialElite';
+}
+#conHeader {
+    font-size: 6rem;
+    font-family: 'Kristi';
+    color: white;
+}
+.contactContainer p {
+    font-size: 1.5rem;
+    width: 75rem;
+    line-height: 2rem;
+    border: white solid;
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    padding: 1rem;
+    color: white;
+}
+.contactContainer button {
+    width: 20rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.conButton {
+    border: white solid;
+    background-color: transparent;
+    font-family: "SpecialElite";
+    font-size: 1.5rem;
+    color: #D7D4DB;
+    text-align: center;
+    padding: 0.5rem 5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.conButton a {
+    text-decoration: none;
+    color: #D7D4DB;
+}
+.conButton:hover {
+    background-color: white;
+    color: #be1306;
+}
+.conButton:active {
+    transform: scale(0.85);
+    background-color: #de9200;
+    color: white;
+}
+
+
+
+/* Contact form CSS styling */
+.contactForm {
+    height: 10rem;
+    width: 100%;
+}
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    border: white solid;
+    color: #D7D4DB;
+    border-radius: 1rem;
+    background-color: black;
+    position: relative;
+    height: 50rem;
+    bottom: 40.4rem;
+    opacity: 0.97;
+    transition: all 0.4s;
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.formButton {
+    border: none;
+    background-color: white;
+    font-family: "SpecialElite";
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.formButton:hover {
+    transform: scale(1.03);
+}
+.formButton:active {
+    transform: scale(0.85);
+}
+.formButton:disabled {
+    background-color: #D7D4DB;
+    color: black;
+    border: whitesmoke dotted;
+    cursor: not-allowed;
+}
+.formContents {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SpecialElite';
+}
+#contactForm input {
+    width: 25rem;
+    height: 2rem;
+    color: black;
+}
+#messageForm {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 1rem;
+    width: 25rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SpecialElite';
+    text-align: start;
+}
+#messageForm textarea {
+    color: black;
+}
+.formClose {
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    margin-top: 1rem;
+    margin-left: 70rem;
+}
+
+/* Hides mobile/tablet menu button when on Large screens */
+@media screen and (min-width: 1020px) {
+    #mobile {
+        display: none;
+    }
+    .mobileCon {
+        display: none;
+    }
 }
