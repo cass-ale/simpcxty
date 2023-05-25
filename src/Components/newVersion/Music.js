@@ -1,6 +1,5 @@
 import React from 'react'
 import MusicHeader from "./MusicHeader";
-import Footer from './Footer';
 import Hero from '../Hero';
 import ScrollToTopOnMount from '../Scroll';
 import Latest from './Latest';
@@ -41,7 +40,6 @@ function Music() {
         </main>
 
         <footer>
-            <Footer />
         </footer>
 
         </>

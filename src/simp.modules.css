@@ -657,7 +657,7 @@ footer ul {
         display: none;
     }
     .mobileCon {
-        border: white solid;
+        border: none;
         font-family: "SpecialElite";
         font-size: 1.5rem;
         color: #D7D4DB;
