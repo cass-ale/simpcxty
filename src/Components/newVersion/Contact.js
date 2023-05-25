@@ -1,6 +1,5 @@
 import React from 'react'
 import ContactHeader from './ContactHeader';
-import Footer from './Footer';
 import ContactPage from "../Pages/ContactPage";
 
 function Contact() {
@@ -19,7 +18,6 @@ function Contact() {
         </main>
 
         <footer>
-            {/* <Footer /> */}
         </footer>
 
         </>
