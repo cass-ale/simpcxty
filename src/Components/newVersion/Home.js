@@ -22,7 +22,7 @@ function Home() {
             <div id="img6"></div>
             <div id="img7"></div>
             <div id="img3"></div>
-            {/* <div id="img8"></div> */}
+            <div id="img8"></div>
 
 
         </main>
