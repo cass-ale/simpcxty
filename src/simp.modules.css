@@ -434,8 +434,8 @@ footer ul {
     transform: scale(0.85);
 }
 .formButton:disabled {
-    background-color: #D7D4DB;
-    color: black;
+    background-color: grey;
+    color: #D7D4DB;
     border: whitesmoke dotted;
     cursor: not-allowed;
 }
@@ -688,11 +688,14 @@ footer ul {
     }
     #contactForm input {
         width: 100%;
+        font-size: 0.75rem;
     }
     #messageForm {
-        width: 12rem;
-        height: 5rem;
+        width: 75%;
         align-items: center;
+    }
+    .formContents textarea {
+        font-size: 0.75rem;
     }
     .formClose {
         margin-left: 20rem;
