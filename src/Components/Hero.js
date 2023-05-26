@@ -22,7 +22,7 @@ const handleMouseOut = () => {
 
         <section className="cta">
         <p id="songTitle">'Saturday'<br/>
-            Feat. King Jaaah
+            Feat. KING JAAAH
         </p>
 
         <a href='https://unitedmasters.com/m/642b4f481e4cf0054bfba477' target="_blank" rel="noopener noreferrer"><button className="button">

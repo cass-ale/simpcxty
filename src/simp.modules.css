@@ -576,6 +576,7 @@ footer ul {
     .firstAlbum {
         padding: 1rem;
         background-attachment: local;
+        height: 125vh;
     }
     .tracklist {
         font-size: 1rem;
