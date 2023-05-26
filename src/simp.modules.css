@@ -605,6 +605,20 @@ footer ul {
     }
 
 
+
+    .contactPage {
+        background-position: center;
+    }
+    @keyframes conbg {
+        25% {background-image: url(./Images/AA8A281301.JPG);
+            background-position: center;}
+        50% {background-image: url(./Images/AA8A283101.JPG);
+            background-position: center;}
+        75% {background-image: url(./Images/AA8A281301.JPG);
+            background-position: center;}
+        100% {background-image: url(./Images/AA8A283101.JPG);
+            background-position: center;}
+    }
     .contactContainer {
         flex-wrap: wrap;
         justify-content: center;
@@ -659,6 +673,7 @@ footer ul {
     }
     .mobileCon {
         border: none;
+        background-color: #D7D4DB;
         font-family: "SpecialElite";
         font-size: 1.5rem;
         color: #D7D4DB;
