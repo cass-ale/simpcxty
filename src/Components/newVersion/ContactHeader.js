@@ -11,7 +11,7 @@ function ContactHeader() {
                     <Link to="/music">Music</Link>
                 </li>
                 <li>
-                    <Link to="/press">simpcxty</Link>
+                    {/*<Link to="/press">simpcxty</Link>*/}
                 </li>
             </ul>
         </header>
