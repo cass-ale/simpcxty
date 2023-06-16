@@ -41,64 +41,64 @@ header ul {
 #img1 {
     width: 100%;
     height: 200vh;
-    background-image: url(../src/Images/126.JPEG);
+    background-image: url(../src/Images/126.webp);
     background-size: cover;
     background-position: 50% 100%;
-}
-#img3 {
-    width: 100%;
-    height: 200vh;
-    background-image: url(../src/Images/IMG_6325.JPG);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-attachment: fixed;
 }
 #img2 {
     width: 100%;
     height: 150vh;
-    background-image: url(../src/Images/IMG_6330.JPG);
+    background-image: url(../src/Images/IMG_6330.webp);
     background-size: cover;
     background-position: 50% 80%;
     animation: pic3 6s step-end infinite;
 }
+#img3 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/IMG_6325.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
 @keyframes pic3 {
-    25% {background-image: url(../src/Images/IMG_6419.JPG)}
-    50% {background-image: url(../src/Images/IMG_6330.JPG)}
-    75% {background-image: url(../src/Images/IMG_6419.JPG)}
-    100% {background-image: url(../src/Images/IMG_6330.JPG)}
-}
-#img5 {
-    width: 100%;
-    height: 150vh;
-    background-image: url(../src/Images/IMG_2993.JPG);
-    background-size: cover;
-    background-position: 50% 95%;
-}
-#img7 {
-    width: 100%;
-    height: 200vh;
-    background-image: url(../src/Images/IMG_3612.JPG);
-    background-size: cover;
-    background-position: 50% 100%;
-}
-#img6 {
-    width: 100%;
-    height: 200vh;
-    background-image: url(../src/Images/IMG_2688.JPG);
-    background-size: cover;
-    background-position: 50% 80%;
+    25% {background-image: url(../src/Images/IMG_6419.webp)}
+    50% {background-image: url(../src/Images/IMG_6330.webp)}
+    75% {background-image: url(../src/Images/IMG_6419.webp)}
+    100% {background-image: url(../src/Images/IMG_6330.webp)}
 }
 #img4 {
     width: 100%;
     height: 220vh;
-    background-image: url(../src/Images/0B739AF6-EEDF-431A-84C6-25E0C440C593.JPG);
+    background-image: url(../src/Images/0B739AF6-EEDF-431A-84C6-25E0C440C593.webp);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+#img5 {
+    width: 100%;
+    height: 150vh;
+    background-image: url(../src/Images/IMG_2993.webp);
+    background-size: cover;
+    background-position: 50% 95%;
+}
+#img6 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/IMG_2688.webp);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+#img7 {
+    width: 100%;
+    height: 200vh;
+    background-image: url(../src/Images/IMG_3612.webp);
     background-size: cover;
     background-position: 50% 100%;
 }
 #img8 {
     width: 100%;
     height: 100vh;
-    background-image: url(../src/Images/simpxfire.jpeg);
+    background-image: url(../src/Images/simpxfire.webp);
     background-size: contain;
     background-position: 50% 43%;
 }
@@ -118,6 +118,7 @@ header ul {
 }
 #simp {
     font-family: "Kristi";
+    cursor: pointer;
 }
 
 
@@ -128,7 +129,7 @@ header ul {
 .musicBG {
     width: 100%;
     height: 100vh;
-    background-image: url(../src/Images/background.JPEG);
+    background-image: url(../src/Images/background.webp);
     background-size: cover;
     background-position: 50% 50%;
     z-index: 0;
@@ -229,7 +230,7 @@ header ul {
 .firstAlbum {
     width: 100%;
     height: 100vh;
-    background-image: url(../src/Images/IMG_7376.JPG);
+    background-image: url(../src/Images/IMG_7376.webp);
     background-size: cover;
     background-position: 50% 22%;
     background-attachment: fixed;
@@ -263,7 +264,7 @@ header ul {
     color: #ff5600;
 }
 #vid {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -271,10 +272,9 @@ header ul {
 .simpsesh {
     display: flex;
     justify-content: center;
-    width: 100vw;
     height: 100vh;
     padding: 12.5rem;
-    background-image: url(../src/Images/6.JPEG);
+    background-image: url(../src/Images/6.webp);
     background-size: cover;
     background-position: 50% 30%;
     background-attachment: fixed;
@@ -317,7 +317,7 @@ footer ul {
 
 
 .contactPage {
-    background-image: url(./Images/AA8A283101.JPG);
+    background-image: url(./Images/AA8A283101.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 25%;
@@ -326,13 +326,13 @@ footer ul {
     animation: conbg 10s step-end infinite;
 }
 @keyframes conbg {
-    25% {background-image: url(./Images/AA8A281301.JPG);
+    25% {background-image: url(./Images/AA8A281301.webp);
         background-position: 50% 35%;}
-    50% {background-image: url(./Images/AA8A283101.JPG);
+    50% {background-image: url(./Images/AA8A283101.webp);
         background-position: 50% 25%;}
-    75% {background-image: url(./Images/AA8A281301.JPG);
+    75% {background-image: url(./Images/AA8A281301.webp);
         background-position: 50% 35%;}
-    100% {background-image: url(./Images/AA8A283101.JPG);
+    100% {background-image: url(./Images/AA8A283101.webp);
         background-position: 50% 25%;}
 }
 
@@ -610,13 +610,13 @@ footer ul {
         background-position: center;
     }
     @keyframes conbg {
-        25% {background-image: url(./Images/AA8A281301.JPG);
+        25% {background-image: url(./Images/AA8A281301.webp);
             background-position: center;}
-        50% {background-image: url(./Images/AA8A283101.JPG);
+        50% {background-image: url(./Images/AA8A283101.webp);
             background-position: center;}
-        75% {background-image: url(./Images/AA8A281301.JPG);
+        75% {background-image: url(./Images/AA8A281301.webp);
             background-position: center;}
-        100% {background-image: url(./Images/AA8A283101.JPG);
+        100% {background-image: url(./Images/AA8A283101.webp);
             background-position: center;}
     }
     .contactContainer {

@@ -6,7 +6,7 @@ function Sub(props) {
   const handleClick = () => {
     props.formReset();
   }
-    
+
     return (
       <>
       <div

@@ -4,6 +4,12 @@ import Footer from './Footer';
 import ScrollToTopOnMount from '../Scroll';
 
 function Home() {
+    const handleClick = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+    }
     return (
         <>
         <ScrollToTopOnMount />
@@ -13,7 +19,7 @@ function Home() {
 
         <main>
 
-        <section id='mainText'><span id='simp'>simpcxty</span></section>
+        <section id='mainText'><span id='simp' onClick={handleClick}>simpcxty</span></section>
 
             <div id="img2"></div>
             <div id='img1'></div>
