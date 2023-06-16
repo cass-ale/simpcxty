@@ -1,6 +1,7 @@
 import './simp.modules.css';
 import "./styles.modules.css";
 import './index.css';
+import Loader from './Loader';
 import React, {useEffect, useState} from 'react';
 import Home from './Components/newVersion/Home';
 import Contact from './Components/newVersion/Contact'
@@ -25,14 +26,21 @@ function App() {
   return (
     <>
     <ChakraProvider>
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/press' element={<Press />} />
-        <Route exact path='/music' element={<Music />} />
-      </Routes>
-    </Router>
+    {
+      loading ? (
+        <Loader />
+      ) : (
+        <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/contact' element={<Contact />} />
+          <Route exact path='/press' element={<Press />} />
+          <Route exact path='/music' element={<Music />} />
+        </Routes>
+      </Router>
+      )
+    }
+
     </ChakraProvider>
     </>
   );

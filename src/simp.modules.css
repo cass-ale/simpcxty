@@ -17,19 +17,21 @@
 }
 
 .Loader {
+    display: flex;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: white;
-    color: black;
+    background-color: #184461;
+    color: #D7D4DB;
     text-align: center;
 }
 .Loader p {
-    font-family: "Orpheus";
+    font-family: "SpecialElite";
     font-size: 4rem;
 }
 .Loader h2 {
-    font-family: "Gopher";
-    font-size: 1.5rem;
+    font-family: "Kristi";
+    font-size: 5rem;
 }
 .loadContent {
     width: 100vw;

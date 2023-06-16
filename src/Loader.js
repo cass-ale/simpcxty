@@ -1,14 +1,18 @@
 import React from 'react';
-import { CircularProgress } from '@mui/material';
-
+import { Spinner } from '@chakra-ui/react'
 
 function Loader() {
     return (
         <div className='Loader'>
         <div className='loadContent'>
-        <p>Welcome To The CAPRI Catalogue.</p>
-        <CircularProgress sx={{color: "black"}} size={"5rem"} />
-        <h2>Sit tight while we prepare things behind the scenes, and we sincerely hope you enjoy your stay with us.</h2>
+        <p>NATTY BABY!</p>
+        <h2>Be Patient, We're Loading Everything Behind The Scenes Now.</h2>
+        <Spinner
+        size='xl'
+        thickness='0.75rem'
+        speed='0.65s'
+        emptyColor='gray.100'
+        color='blue.200' sx={{width: "10rem", height: "10rem"}}/>
         </div>
         </div>
     )
