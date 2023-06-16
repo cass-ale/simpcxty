@@ -1,7 +1,7 @@
 import './simp.modules.css';
 import "./styles.modules.css";
 import './index.css';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Home from './Components/newVersion/Home';
 import Contact from './Components/newVersion/Contact'
 import Music from './Components/newVersion/Music';
@@ -12,7 +12,18 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 
 function App() {
+
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+
   return (
+    <>
     <ChakraProvider>
     <Router>
       <Routes>
@@ -23,6 +34,7 @@ function App() {
       </Routes>
     </Router>
     </ChakraProvider>
+    </>
   );
 }
 
