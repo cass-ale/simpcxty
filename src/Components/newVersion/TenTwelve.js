@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import socials from '../socials';
 import { Grid, GridItem } from '@chakra-ui/react'
@@ -9,28 +9,115 @@ import { Grid, GridItem } from '@chakra-ui/react'
 
 
 function TenTwelve() {
-const [showLinks, setShowLinks] = useState(false)
+    return (
+<Grid className='trackGrid' templateColumns='repeat(2, 1fr)' gap={100}>
 
-const firstClick = () => {
-    setShowLinks(!showLinks);
-}
+<GridItem className='trackCards'>
+<span>I</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>intro</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>II</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>L.ove</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>III</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>I.nterlude</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>IV</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>B.</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>V</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>R.age</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>VI</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>A.partofme</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>VII</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>prelude</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>VIII</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>SUN</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>IX</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>moon</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>X</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>rising.Rising.RISING.</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>XI</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>outro</span>
+</GridItem>
+
+<GridItem className='trackCards'>
+<span>XII</span>
+<span id='songLinks'>
+<a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a>
+</span>
+<span id='songTitles' style={{textDecoration: "underline"}}>Stubborn (Bonus)</span>
+</GridItem>
 
 
 
-return (
-<Grid templateColumns='repeat(3, 1fr)' gap={6}>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 1. </GridItem> <GridItem id='songLinks' w='100%' h='10'> {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>} </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>intro</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 2. </GridItem> <GridItem id='songLinks' w='100%' h='10'> {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>L.ove</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 3. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>} </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>I.nterlude</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 4. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>} </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>B.</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 5. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>R.age</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 6. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>A. partofme</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 7. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>prelude</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 8. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>SUN</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 9. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>moon</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 10. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>rising.Rising.RISING</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 11. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>outro</span> </GridItem>
-<GridItem style={{textAlign: "center"}} w='100%' h='10' > 12. </GridItem> <GridItem id='songLinks' w='100%' h='10'>  {showLinks && <><a id="spotify" href={socials[6].url}><FontAwesomeIcon icon={socials[5].icon} size="2x"/></a><a id='apple' href={socials[8].url}><FontAwesomeIcon icon={socials[7].icon} size="2x"/></a><a id='amazon' href={socials[9].url}><FontAwesomeIcon icon={socials[9].icon} size="2x"/></a><a id='soundcloud' href={socials[10].url}><FontAwesomeIcon icon={socials[10].icon} size="2x"/></a></>}  </GridItem> <GridItem id='songTitles' w='100%' h='10'> <span onClick={firstClick} style={{cursor: "pointer", textDecoration: "underline"}}>Stubborn (bonus)</span> </GridItem>
+
+
+
+
+
+
+
+
 </Grid>
     )
 }

@@ -10,9 +10,9 @@ function ContactHeader() {
                 <li>
                     <Link to="/music">Music</Link>
                 </li>
-                <li>
-                    {/*<Link to="/press">simpcxty</Link>*/}
-                </li>
+                {/*<li>
+                    <Link to="/press">simpcxty</Link>
+                </li>*/}
             </ul>
         </header>
     )
