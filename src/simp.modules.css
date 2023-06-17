@@ -620,9 +620,13 @@ footer ul {
     .musicBG {
         height: 150vh;
     }
+
     #hero{
         flex-direction: row;
         gap: 5rem;
+    }
+    #songTitle {
+        background-color: rgba(0, 0, 0, 0) !important;
     }
     .heroImage {
         width: 35vw;
@@ -746,7 +750,7 @@ footer ul {
 
 
     .fader{
-        display: none;
+        display: none !important;
     }
 
     .hero {
@@ -756,6 +760,7 @@ footer ul {
         max-width: 100%;
         width: 100%;
         gap: 1.75rem;
+        top: 10rem;
     }
     .heroImage {
         display: flex;
@@ -768,10 +773,12 @@ footer ul {
     }
     .cta {
         text-align: center;
+        gap: 1rem;
     }
     #songTitle {
         font-size: 2.25rem;
-        color: #184461;
+        color: #D7D4DB;
+        background-color: rgba(0, 0, 0, 0.15);
     }
 
 
