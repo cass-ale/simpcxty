@@ -51,7 +51,7 @@ header {
     font-family: "SpecialElite";
     margin-top: 1rem;
     color: white;
-    z-index: 999;
+    z-index: 8000;
 }
 header ul {
     list-style: none;
@@ -280,6 +280,7 @@ header ul {
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 #songTitles {
@@ -588,7 +589,101 @@ footer ul {
 }
 
 
+@media screen and (max-width: 1020px) and (orientation: landscape) {
+    #img1 {
+        height: 250vh !important;
+    }
+    #img2 {
+        height: 150vh !important;
+    }
+    #img3 {
+        background-attachment: local;
+        height: 250vh !important;
+    }
+    #img4{
+        height: 300vh !important;
+    }
+    #img5 {
+        height: 175vh !important;
+    }
+    #img6 {
+        height: 200vh !important;
+    }
+    #img7 {
+        height: 200vh !important;
+    }
+    #img8 {
+        background-size: contain !important;
+        max-width: 100%;
+    }
+    .musicBG {
+        height: 150vh;
+    }
+    #hero{
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .heroImage {
+        width: 35vw;
+    }
+    .heroImage img {
+        width: 2rem;
+        height: auto;
+    }
+    .firstAlbum {
+        padding: 1rem;
+        background-attachment: local;
+        height: 350vh !important
+    }
+    .simpsesh {
+        height: 150vh;
+    }
 
+
+    .contactContainer {
+        display: flex;
+        flex-direction: row;
+        height: 150vh;
+        gap: 1.5rem !important;
+    }
+    .contactContainer p {
+        padding: 1rem;
+    }
+    .contactForm {
+        width: 100vw;
+        height: 100vh;
+    }
+    .contactForm form {
+        gap: 0rem;
+        height: 140vh !important;
+        position: fixed !important;
+        top: -5.75rem !important;
+    }
+    .mobileCon {
+        width: 20vw !important;
+    }
+    .formContents {
+        transform: scale(0.65);
+    }
+    .formClose {
+        margin-left: 75vw !important;
+    }
+    .formClose svg {
+        width: 1.5rem;
+    }
+    #contactForm, #messageForm {
+        font-size: 0.75rem;
+        margin: 0.25rem;
+    }
+    #contactForm input, #messageForm textarea {
+        font-size: 0.65rem !important;
+    }
+    #messageForm {
+        width: 25vw !important;
+        height: 30vh !important;
+        flex-grow: 0;
+    }
+}
 
 
 /* Mobile/Tablet styling Below */
@@ -666,7 +761,7 @@ footer ul {
     .firstAlbum {
         padding: 1rem;
         background-attachment: local;
-        height: 125vh;
+        height: 175vh;
     }
     .tracklist {
         font-size: 1rem;
@@ -681,6 +776,16 @@ footer ul {
         font-size: 0.75rem;
         padding: 0;
         width: 5.5rem;
+    }
+    #songLinks svg {
+        width: 1.25rem;
+        height: auto;
+    }
+    .trackGrid {
+        padding: 0;
+    }
+    .trackCards {
+        gap: 1rem;
     }
 
     .simpsesh {
@@ -699,26 +804,30 @@ footer ul {
     .contactPage {
         background-position: center;
     }
+    .contactGrid {
+        width: 100%;
+        font-size: 1rem;
+    }
+    #swriter, #model, #designer, #visionary {
+        font-size: 1.5rem;
+    }
     .contactContainer {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
-        max-width: 100%;
-        padding: 0.5rem;
+        padding: 1rem;
         margin: 0;
-        padding-top: 2rem;
-        padding-bottom: 10rem;
     }
     .contactContainer p {
         font-size: 0.8rem;
-        width: 100%;
-        max-width: -moz-fit-content;
-        max-width: fit-content;
         text-align: justify;
         border: #D7D4DB solid;
         border-radius: 0;
         margin: 0;
+        padding: 1rem;
     }
     #conHeader {
         font-size: 4rem;
@@ -736,14 +845,30 @@ footer ul {
         flex-direction: column;
         align-items: center;
         border: none;
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: fixed;
+        top: 0rem;
+        right: 0rem;
         width: 100%;
         height: 100vh;
         font-size: 1.5rem;
         z-index: 9999;
         border-radius: 0;
+        gap: 1rem;
+    }
+    #contactForm, #messageForm {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+    #contactForm input, #messageForm textarea {
+        font-size: 0.65rem !important;
+    }
+    #contactForm {
+        width: 50vw !important;
+    }
+    #messageForm {
+        width: 50vw !important;
+        height: 25vh !important;
+        flex-grow: 0;
     }
     .formButton {
         display: none;
@@ -753,13 +878,16 @@ footer ul {
     }
     .mobileCon {
         border: none;
+        background-color: white;
         font-family: "SpecialElite";
         font-size: 1.5rem;
-        color: #D7D4DB;
+        color: #184461;
         text-align: center;
-        padding: 0.5rem 5rem;
         cursor: pointer;
         transition: all 0.2s;
+        padding: 1rem;
+        text-align: center;
+        width: 40vw !important;
     }
     .mobileCon a {
         text-decoration: none;
@@ -767,18 +895,19 @@ footer ul {
     }
     .mobileCon:hover {
         background-color: white;
-        color: #be1306;
+        color: #184461;
     }
     .mobileCon:active {
         transform: scale(0.85);
-        background-color: #de9200;
+        background-color: 1844610;
         color: white;
     }
     .mobileCon:disabled {
-        background-color: #D7D4DB;
-        color: #1C5D3B;
+        background-color: grey;
+        color: #D7D4DB;
         border: whitesmoke dotted;
         cursor: not-allowed;
+        width: 5rem !important;
     }
     #contactForm input {
         width: 100%;
@@ -793,7 +922,10 @@ footer ul {
     }
     .formClose {
         margin-left: 20rem;
-        color: #D7D4DB;
+        color: #184461;
+    }
+    .formClose svg {
+        width: 1.5rem;
     }
 
     #h1 {
@@ -842,6 +974,6 @@ footer ul {
     }
     .formClose {
         margin-left: 13rem;
-        color: #D7D4DB;
+        color: #184461;
     }
 }
