@@ -590,6 +590,7 @@ footer ul {
 
 
 @media screen and (max-width: 1020px) and (orientation: landscape) {
+
     #img1 {
         height: 250vh !important;
     }
@@ -688,7 +689,23 @@ footer ul {
 
 /* Mobile/Tablet styling Below */
 @media screen and (max-width: 1020px) {
-
+    .Loader {
+        padding: 1.5rem !important;
+    }
+    .Loader p {
+        font-size: 4rem !important;
+    }
+    .Loader h2 {
+        font-size: 2.5rem !important;
+    }
+    .spin {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+    .loadContent {
+        height: 80vh !important;
+        gap: 2rem !important;
+    }
     header {
         width: 100vw;
         font-size: 0.85rem;

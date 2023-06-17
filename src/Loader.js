@@ -8,6 +8,7 @@ function Loader() {
         <p>NATTY BABY!</p>
         <h2>Be Patient, We're Loading Everything Behind The Scenes Now.</h2>
         <Spinner
+        className="spin"
         size='xl'
         thickness='0.75rem'
         speed='0.65s'
