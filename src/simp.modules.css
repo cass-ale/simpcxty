@@ -166,7 +166,7 @@ header ul {
     opacity: 0.5;
     z-index: 1;
     position: relative;
-    bottom: 35rem;
+    bottom: 35.3rem;
 }
 
 .latest img {
@@ -395,8 +395,12 @@ footer ul {
     border-top-right-radius: 0.25rem;
     border-top-left-radius: 0.25rem;
 }
+#imgMove {
+    position: relative;
+    bottom: 6rem;
+}
 .cardHolder img {
-    width: 20vw;
+    width: 23rem;
     height: auto;
 }
 .contactContainer {

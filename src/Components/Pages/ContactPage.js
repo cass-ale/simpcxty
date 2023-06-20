@@ -1,8 +1,10 @@
 import React, {useState, useRef} from "react";
 import Form from '../ContactForm';
+import placeholder from '../../Images/placehold.webp'
 import firehouse from "../../Images/firehouse.webp"
 import designer from '../../Images/AA8A281301.webp'
 // import model from '../../Images/IMG_0017.webp'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 
@@ -40,7 +42,7 @@ function Contact() {
             <main>
             <section className="conCards">
                 <article onClick={handleClick} className="cardHolder" id="swriter">
-                <section className="imgHolder"><img src={firehouse} alt="" /></section>
+                <section className="imgHolder"><LazyLoadImage src={firehouse} width={368} height={320} placeholderSrc={placeholder} effect="blur" alt="simpcxty" /></section>
                     <section id="text"><h2>SONGWRITER</h2>
                     <p>Prolific creator of an R&B sound that pays homage to the old school greats while also appealing to the new school.<br /><br /> Click here to contact simpcxty about a potential musical collaboration! </p></section>
                 </article>
@@ -52,7 +54,7 @@ function Contact() {
                 </article> */}
 
                 <article onClick={handleClick} className="cardHolder" id="designer">
-                    <section className="imgHolder"><img style={{position: 'relative', bottom: "6rem"}} src={designer} alt="" /></section>
+                    <section className="imgHolder"><LazyLoadImage src={designer} alt="simpcxty" width={368} height={320} placeholderSrc={placeholder} effect="blur" id="imgMove" /></section>
                     <section id="text"><h2>DESIGNER</h2>
                     <p>simpcxty has an eye for fresh style and has created countless eye-grabbing looks for his onstage performances.<br /><br /> Click here for any inquiries regarding styling or custom pieces.</p></section>
                 </article>
