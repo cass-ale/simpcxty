@@ -2,7 +2,7 @@ import React, {useState, useRef} from "react";
 import Form from '../ContactForm';
 import firehouse from "../../Images/firehouse.webp"
 import designer from '../../Images/AA8A281301.webp'
-import model from '../../Images/IMG_0017.webp'
+// import model from '../../Images/IMG_0017.webp'
 
 
 
