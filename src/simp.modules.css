@@ -801,7 +801,9 @@ footer ul {
         background-color: rgba(0, 0, 0, 0.15);
     }
 
-
+    .latest {
+        display: none;
+    }
     .firstAlbum {
         padding: 1rem;
         background-attachment: local;
@@ -896,6 +898,9 @@ footer ul {
         font-size: 4rem;
         text-align: center;
     }
+    #connect {
+        font-size: 2rem !important;
+    }
 
 
     .contactForm {
@@ -950,7 +955,7 @@ footer ul {
         transition: all 0.2s;
         padding: 1rem;
         text-align: center;
-        width: 40vw !important;
+        width: 50vw !important;
     }
     .mobileCon a {
         text-decoration: none;
