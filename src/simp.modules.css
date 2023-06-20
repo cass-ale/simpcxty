@@ -356,59 +356,53 @@ footer ul {
 }
 
 /* Contact Page CSS Styling */
-.contactGrid {
+.conCards {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "SpecialElite";
+    background-image: url(./Images/BSIMP.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cardHolder {
+    height: 70vh;
+    width: 20vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
-    font-family: 'SpecialElite';
-    text-align: center;
-    height: 100vh;
+    background-color: white;
+    cursor: pointer;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
+    transition: all 2.2s;
 }
-.conCard {
-    font-size: 2.5rem;
-    color: white;
+.cardHolder h2 {
+    font-size: 1.75rem;
 }
-#swriter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./Images/9E50477F-AE68-466F-A0D2-B127A03D0F23.webp);
-    background-size: cover;
-    background-position: 50% 35%;
-    height: 100%;
+.cardHolder:hover {
+    transform: scale(1.05);
 }
-#model {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./Images/firehouse.webp);
-    background-size: cover;
-    background-position: 50% 35%;
-    height: 100%;
+#text {
+    padding: 2rem;
 }
-#designer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./Images/AA8A281301.webp);
-    background-size: cover;
-    background-position: 50% 36%;
-    height: 100%;
+.imgHolder {
+    overflow: hidden;
+    height: 20rem;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
 }
-#visionary {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./Images/IMG_6401.webp);
-    background-size: cover;
-    background-position: 50% 35%;
-    height: 100%;
+.cardHolder img {
+    width: 20vw;
+    height: auto;
 }
 .contactContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100vh;
     padding: 5rem;
     gap: 5rem;
@@ -458,8 +452,7 @@ footer ul {
 
 /* Contact form CSS styling */
 .contactForm {
-    height: 10rem;
-    width: 100%;
+    width: 85vw;
 }
 .contactForm form{
     display: flex;
@@ -468,12 +461,12 @@ footer ul {
     z-index: 100;
     border: white solid;
     color: #184461;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     background-color: #D7D4DB;
     position: relative;
-    height: 50rem;
+    height: 55rem;
     bottom: 40.4rem;
-    opacity: 0.97;
+    opacity: 0.975;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
 }
@@ -482,7 +475,7 @@ footer ul {
     background-color: white;
     font-family: "SpecialElite";
     font-size: 1.5rem;
-    color: #184461;
+    color: #184461 !important;
     text-align: center;
     cursor: pointer;
     transition: all 0.2s;
@@ -492,10 +485,12 @@ footer ul {
 }
 .formButton:active {
     transform: scale(0.85);
+    color: white !important;
+    background-color: #184461;
 }
 .formButton:disabled {
     background-color: grey;
-    color: #D7D4DB;
+    color: #D7D4DB !important;
     border: whitesmoke dotted;
     cursor: not-allowed;
 }
@@ -539,8 +534,8 @@ footer ul {
     display: flex;
     justify-content: right;
     align-items: flex-end;
-    margin-top: 1rem;
-    margin-left: 70rem;
+    margin-top: 0.25rem;
+    margin-left: 75rem;
 }
 
 /* Hides mobile/tablet menu button when on Large screens */
