@@ -39,7 +39,7 @@ function Contact() {
 
             <main>
             <section className="conCards">
-                <article onClick={handleClick} className="cardHolder">
+                <article onClick={handleClick} className="cardHolder" id="swriter">
                 <section className="imgHolder"><img src={firehouse} alt="" /></section>
                     <section id="text"><h2>SONGWRITER</h2>
                     <p>Prolific creator of an R&B sound that pays homage to the old school greats while also appealing to the new school.<br /><br /> Click here to contact simpcxty about a potential musical collaboration! </p></section>
@@ -51,7 +51,7 @@ function Contact() {
                     <p></p></section>
                 </article> */}
 
-                <article onClick={handleClick} className="cardHolder">
+                <article onClick={handleClick} className="cardHolder" id="designer">
                     <section className="imgHolder"><img style={{position: 'relative', bottom: "6rem"}} src={designer} alt="" /></section>
                     <section id="text"><h2>DESIGNER</h2>
                     <p>simpcxty has an eye for fresh style and has created countless eye-grabbing looks for his onstage performances.<br /><br /> Click here for any inquiries regarding styling or custom pieces.</p></section>

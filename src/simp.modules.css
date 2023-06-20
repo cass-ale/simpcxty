@@ -639,7 +639,31 @@ footer ul {
         height: 150vh;
     }
 
-
+    .conCards {
+        flex-direction: row !important;
+        height: 150vh !important;
+    }
+    .cardHolder {
+        width: 35vw !important;
+        height: 80vh !important;
+    }
+    .imgHolder {
+        height: 50rem !important;
+        display: none;
+    }
+    #swriter {
+        background-image: url(./Images/firehouse.webp);
+        background-size: cover;
+        color: white
+    }
+    #designer {
+        background-image: url(./Images/AA8A281301.webp);
+        background-size: cover;
+        color: white;
+    }
+    #text {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
     .contactContainer {
         display: flex;
         flex-direction: row;
@@ -823,12 +847,27 @@ footer ul {
     .contactPage {
         background-position: center;
     }
-    .contactGrid {
-        width: 100%;
-        font-size: 1rem;
+    .conCards {
+        flex-direction: column;
+        height: 200vh;
     }
-    #swriter, #model, #designer, #visionary {
-        font-size: 1.5rem;
+    .cardHolder {
+        width: 90vw;
+        height: 65vh;
+        justify-content: center;
+    }
+    .cardHolder h2 {
+        font-size: 1.25rem;
+    }
+    .cardHolder p {
+        font-size: 0.85rem;
+    }
+    .imgHolder {
+        width: 90vw;
+        height: 30vh;
+    }
+    .cardHolder img {
+        width: 90vw;
     }
     .contactContainer {
         display: flex;
