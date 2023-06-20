@@ -852,9 +852,10 @@ footer ul {
         flex-direction: column;
         height: 200vh;
         background-attachment: local;
+        gap: 2.5rem;
     }
     .cardHolder {
-        width: 90vw;
+        width: 80vw;
         height: 65vh;
     }
     .cardHolder h2 {
@@ -863,12 +864,15 @@ footer ul {
     .cardHolder p {
         font-size: 0.85rem;
     }
+    .cardHolder:hover {
+        transform: scale(1);
+    }
     .imgHolder {
-        width: 90vw;
+        width: 80vw;
         height: 30vh;
     }
     .cardHolder img {
-        width: 90vw;
+        width: 80vw;
     }
     .contactContainer {
         display: flex;
