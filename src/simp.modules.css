@@ -646,6 +646,7 @@ footer ul {
     .cardHolder {
         width: 35vw !important;
         height: 80vh !important;
+        justify-content: center;
     }
     .imgHolder {
         height: 50rem !important;
@@ -850,11 +851,11 @@ footer ul {
     .conCards {
         flex-direction: column;
         height: 200vh;
+        background-attachment: local;
     }
     .cardHolder {
         width: 90vw;
         height: 65vh;
-        justify-content: center;
     }
     .cardHolder h2 {
         font-size: 1.25rem;
