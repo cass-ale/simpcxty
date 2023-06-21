@@ -357,7 +357,6 @@ footer ul {
 
 /* Contact Page CSS Styling */
 .conCards {
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;

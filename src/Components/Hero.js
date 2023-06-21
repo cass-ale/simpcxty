@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import newRelease from "../Images/newestRelease.png";
-import Alt from '../Images/SaturdayAlt.png'
+import newRelease from "../Images/newestRelease.webp";
+import Alt from '../Images/SaturdayAlt.webp'
 
 function Hero() {
 const [imgSrc, setImgSrc] = useState(newRelease);
