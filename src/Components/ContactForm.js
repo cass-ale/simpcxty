@@ -46,12 +46,9 @@ function ContactForm(props) {
         }
         >
             {({ errors, isValid, dirty }) => (
-        <Form>
-            <div className="contactForm">
-
-            <form ref={formRef} className='formContents'
-            action="https://script.google.com/macros/s/AKfycbzenjxt9Q2xBQw2HRaYYmmUx7sWXDpDLEWtXxurdnWGjeSSBP8LQIst0kJN0Ve8b1fl3A/exec" method="post" id="my-form"
-            >
+        <Form  ref={formRef} className='contactForm'
+        action="https://script.google.com/macros/s/AKfycbzenjxt9Q2xBQw2HRaYYmmUx7sWXDpDLEWtXxurdnWGjeSSBP8LQIst0kJN0Ve8b1fl3A/exec" method="post" id="my-form">
+            <div className="formContents">
 
             <div className='formClose'><FontAwesomeIcon icon={faClose} onClick={props.closeForm} size='3x'/></div>
 
@@ -85,13 +82,8 @@ function ContactForm(props) {
 
             <section id="contactForm">
                 {dirty && (
-            <input className='mobileCon' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
-                {dirty && (
             <input className='formButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'0.5rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
             </section>
-
-
-            </form>
 
 
             </div>

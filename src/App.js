@@ -1,5 +1,4 @@
 import './simp.modules.css';
-import "./styles.modules.css";
 import './index.css';
 import Loader from './Loader';
 import React, {useEffect, useState} from 'react';

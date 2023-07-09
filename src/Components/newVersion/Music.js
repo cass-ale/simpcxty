@@ -5,7 +5,6 @@ import ScrollToTopOnMount from '../Scroll';
 import Latest from './Latest';
 import TenTwelve from './TenTwelve';
 import SimpSesh from './SimpSesh';
-import YoutubeVids from './YoutubeVids';
 
 
 
@@ -35,7 +34,6 @@ function Music() {
                 <TenTwelve />
             </div>
             <SimpSesh />
-            <YoutubeVids />
 
         </main>
 
