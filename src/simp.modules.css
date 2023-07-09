@@ -753,7 +753,7 @@ footer ul {
 
 
 
-   
+
 
     .hero {
         flex-direction: column;
@@ -788,7 +788,7 @@ footer ul {
     .firstAlbum {
         padding: 1rem;
         background-attachment: local;
-        height: 175vh;
+        height: 185vh;
     }
     .tracklist {
         font-size: 1rem;
