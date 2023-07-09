@@ -870,8 +870,6 @@ footer ul {
     .contactContainer p {
         font-size: 0.8rem;
         text-align: justify;
-        border: #D7D4DB solid;
-        border-radius: 0;
         margin: 0;
         padding: 1rem;
     }
