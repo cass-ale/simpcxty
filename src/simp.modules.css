@@ -464,7 +464,7 @@ footer ul {
     color: #184461;
     border-radius: 0.25rem;
     background-color: #D7D4DB;
-    position: absolute;
+    position: fixed;
     height: 50rem;
     top: 0;
     opacity: 0.975;
@@ -550,7 +550,7 @@ footer ul {
 
 
 
-/* Medium/Small Laptop screen formatting for smooth transitions */
+/* Large screen formatting for smooth transitions */
 @media screen and (min-width: 1600px)
 {
     .musicBG {
@@ -565,6 +565,9 @@ footer ul {
     }
     .firstAlbum {
         height: 200vh;
+    }
+    .contactForm{
+        top: 5rem;
     }
 }
 
