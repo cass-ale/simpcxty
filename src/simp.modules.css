@@ -346,7 +346,7 @@ footer ul {
 }
 .footerForm {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     font-size: 0.75rem;
@@ -945,6 +945,7 @@ footer ul {
         font-size: 3rem;
     }
     .footerForm {
+        flex-direction: column;
         font-size: 1rem;
         align-items: center;
         gap: 0.5rem;
