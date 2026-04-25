@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 function ContactHeader() {
     return (
@@ -10,9 +9,6 @@ function ContactHeader() {
                 <li>
                     <Link to="/music">Music</Link>
                 </li>
-                {/*<li>
-                    <Link to="/press">simpcxty</Link>
-                </li>*/}
             </ul>
         </header>
     )

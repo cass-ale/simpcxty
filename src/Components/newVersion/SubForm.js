@@ -3,33 +3,32 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Button } from '@chakra-ui/react'
 
-
-
 function SubForm(props) {
   const formRef = React.useRef(null);
 
-
   React.useEffect(() => {
     const form = formRef.current;
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const action = e.target.action;
+      fetch(action, {
+        method: "POST",
+        body: data,
+      }).then(() => {
+        alert("Success! You Have Been Subscribed To The simpcxty Newsletter!");
+      });
+      props.formSubmit();
+    }
+
     form.addEventListener("submit", handleSubmit);
 
     return () => {
       form.removeEventListener("submit", handleSubmit);
     };
-  },);
+  }, [props]);
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const data = new FormData(e.target);
-    const action = e.target.action;
-    fetch(action, {
-      method: "POST",
-      body: data,
-    }).then(() => {
-      alert("Success! You Have Been Subscribed To The simpcxty Newsletter!");
-    });
-    props.formSubmit();
-  }
   return(
         <>
         <Formik
@@ -37,7 +36,7 @@ function SubForm(props) {
         validationSchema={Yup.object({
           email: Yup.string()
             .email("Invalid Email Address").min(1, "Please Fill Out This Field").max(100).matches(/([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})$/, "Invalid Email Address")
-            .required(""),
+            .required("Email is required"),
         })}>
         {({ errors, isValid, dirty }) => (
           <Form>

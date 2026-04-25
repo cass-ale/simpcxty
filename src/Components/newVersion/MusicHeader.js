@@ -1,9 +1,6 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 
-
-
-function HomeHeader() {
+function MusicHeader() {
     return (
         <header>
             <ul>
@@ -13,12 +10,9 @@ function HomeHeader() {
                 <li>
                     <Link to="/contact">Contact</Link>
                 </li>
-                {/*<li>
-                    <Link to="/press">simpcxty</Link>
-                </li>*/}
             </ul>
         </header>
     )
 }
 
-export default HomeHeader;
+export default MusicHeader;

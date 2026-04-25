@@ -1,9 +1,5 @@
-import React from 'react'
 import PressHeader from "./PressHeader";
 import Footer from './Footer';
-
-
-
 
 function Press() {
     return (

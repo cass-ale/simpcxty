@@ -1,4 +1,3 @@
-import React from 'react';
 import { Grid, GridItem } from '@chakra-ui/react'
 import cover1 from "../../Images/5.jpeg";
 import cover2 from "../../Images/7.jpeg";

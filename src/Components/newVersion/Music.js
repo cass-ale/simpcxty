@@ -1,12 +1,9 @@
-import React from 'react'
 import MusicHeader from "./MusicHeader";
 import Hero from '../Hero';
 import ScrollToTopOnMount from '../Scroll';
 import Latest from './Latest';
 import TenTwelve from './TenTwelve';
 import SimpSesh from './SimpSesh';
-
-
 
 function Music() {
     return (

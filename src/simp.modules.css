@@ -76,7 +76,6 @@ header ul {
     background-image: url(../src/Images/IMG_6330.webp);
     background-size: cover;
     background-position: 50% 80%;
-    /* animation: pic3 6s step-end infinite; */
 }
 #img3 {
     width: 100%;
@@ -86,12 +85,7 @@ header ul {
     background-position: 50% 50%;
     background-attachment: fixed;
 }
-@keyframes pic3 {
-    25% {background-image: url(../src/Images/IMG_6419.webp)}
-    50% {background-image: url(../src/Images/IMG_6330.webp)}
-    75% {background-image: url(../src/Images/IMG_6419.webp)}
-    100% {background-image: url(../src/Images/IMG_6330.webp)}
-}
+
 #img4 {
     width: 100%;
     height: 220vh;

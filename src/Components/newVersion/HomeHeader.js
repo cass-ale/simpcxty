@@ -1,7 +1,4 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
-
-
 
 function HomeHeader() {
     return (
@@ -13,9 +10,6 @@ function HomeHeader() {
                 <li>
                     <Link to="/contact">Contact</Link>
                 </li>
-                 {/*<li>
-                   <Link to="/press">simpcxty</Link>
-                </li>*/}
             </ul>
         </header>
     )

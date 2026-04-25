@@ -10,10 +10,6 @@ import {
     faAmazon,
 } from '@fortawesome/free-brands-svg-icons';
 
-
-
-
-
 const socials = [
     {
         icon: faInstagram,

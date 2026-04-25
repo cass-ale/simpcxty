@@ -1,9 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import Sub from '../Sub';
 import SubForm from './SubForm';
-
-
 
 function Footer() {
     const [formSubmitted, setFormSubmitted] = React.useState(false);
@@ -24,19 +21,17 @@ function Footer() {
         )}
 
         <section id='copyright'>
-            © {new Date().getFullYear().toString()} simpcxty
+            &copy; {new Date().getFullYear().toString()} simpcxty
         </section>
-
 
             <ul>
                 <li>
-                    <Link to="https://caprimag.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</Link>
+                    <a href="https://caprimag.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
                 </li>
                 <li>
-                    <Link to="https://www.caprimag.com/cookies" target="_blank" rel="noopener noreferrer">Cookies</Link>
+                    <a href="https://www.caprimag.com/cookies" target="_blank" rel="noopener noreferrer">Cookies</a>
                 </li>
             </ul>
-
 
         </footer>
 
